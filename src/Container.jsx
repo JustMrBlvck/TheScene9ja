@@ -1,8 +1,26 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Header from './PrimaryComponent/Header'
 
 function Container() {
   return (
-    <div className='h-[300px] bg-[gold]'>
+    <div>
+         
+          <BrowserRouter>
+            
+                         <Header/>
+                 <Routes>
+ 
+                        <Route/>
+                        <Route/>
+                        <Route/>
+                        <Route/>
+                        <Route/>
+                        <Route/>
+
+                 </Routes>
+          
+          </BrowserRouter>
 
     </div>
   )
