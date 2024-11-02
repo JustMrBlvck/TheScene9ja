@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Header from '../PrimaryComponent/Header'
+import Header from './PrimaryComponent/Header'
 import NewsComponent from './UI/NewsComponents/NewsComponent'
 import SportsComponent from './UI/SportsComponents/SportsComponent'
 
