@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
@@ -7,15 +7,31 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import SideNav from './SideNav';
 
 function Header() {
+  let [callNav, setCallNav] = useState("-350px")
+
+    function HeyNav() {
+       if (callNav == "-350px") {
+           setCallNav("0px")
+           
+       } else {
+           setCallNav("-350px")
+       }
+    }   
+ 
   return (
     <div>
      
-          <div className='h-[150px] bg-[] hidden md:hidden lg:grid lg:grid-rows-[25%,50%,25%]'>
+          <div  className='h-[150px] bg-[] hidden md:hidden lg:grid lg:grid-rows-[25%,50%,25%]'>
                 <div className='bg-[#000] grid grid-cols-[20%,55%,25%] boarder-b-[.3px] border-white'>
                      <div className='flex justify-center items-center'>
-                          <button className='text-2xl text-white'><FaBarsStaggered /></button>
+                          <button onClick={HeyNav} className='text-2xl text-white'><FaBarsStaggered />
+                            
+                              <SideNav callNav={callNav}/>
+                          
+                          </button>
                           <span className='text-PrimaryColor font-Custom font-medium text-[12px] ml-[30px]'>TRENDING</span>
                      </div>
 
@@ -65,7 +81,11 @@ function Header() {
              {/* Mobile Header */}
         <div className='h-[70px] bg-[#000] grid grid-cols-[20%,60%,20%] border-b-[.3px] border-white lg:hidden'>
              <div className='flex justify-center items-center'>
-                 <button className='text-2xl text-white'><FaBarsStaggered /></button>
+                 <button className='text-2xl text-white'><FaBarsStaggered />
+                 
+                   {/* <SideNav callNav={callNav}/> */}
+
+                 </button>
              </div>
 
              <div className='flex justify-center items-center text-PrimaryColor font-Custom font-bold text-2xl'>

@@ -52,38 +52,38 @@ function NewsSecondComponent() {
           id:1,
           Image:"https://theshaderoom.com/wp-content/uploads/2024/10/Social-Media-Speculates-Dej-Loaf-Is-Calling-For-Lil-Durks-Freedom-After-She-Dropped-THIS-Bold-Message.png",
           PostHead:"Hol's Up! Social Media Thinks Dej Loaf May Have Shared A Now-Delected Message About Lil Durk",
-          Date:""
+          Time:""
         }, {
           id:2,
           Image:"https://www.lindaikejisblog.com/photos/shares/AYRA%20STARR%201_1729846972.jpg",
           PostHead:"Ayar Starr Becomes The Official Face of Infinix's HOT Series",
-          Date:""
+           Time:""
         }, {
           id:3,
           Image:"https://theshaderoom.com/wp-content/uploads/2024/10/Okay-Angel-Reese-Shares-Major-Update-After-Going-Viral-For-Saying-Her-WNBA-Salary-Doesnt-Cover-All-Of-Her-Bills-scaled.jpg",
           PostHead:"Okay! Angel Reese Shares Major Update After Going Viral For Saying Her WNBA Salary Doesn't Cover All Of Her Bills",
-          Date:""
+           Time:""
         }, {
           id:4,
           Image:"https://theshaderoom.com/wp-content/uploads/2024/10/Social-Media-Goes-IN-On-Shaquille-O-Neal-For-His-Outfit-Advice-To-Angel-Reese.png",
           PostHead:"Whew! Social Media Goes IN On Shequille O'Neal For His Outfit Advice To Angel Reese (WATCH)",
-          Date:""
+           Time:""
         }, {
           id:5,
           Image:"https://theshaderoom.com/wp-content/uploads/2024/10/Exclusive-Xaviaer-DuRosseau-Reacts-Beyonce-Fan-Receipts-Dissing-Fox-News-Live-TV-scaled-e1730233491950.jpg",
           PostHead:"Whew! Social Media Goes IN On Shequille O'Neal For His Outfit Advice To Angel Reese (WATCH)",
-          Date:""
+           Time:""
         }, {
           id:6,
           Image:"https://theshaderoom.com/wp-content/uploads/2024/10/Oop-Barack-Obama-Sparks-Reactions-After-Sharing-A-Message-About-Stimulus-Checks-Donald-Trump-scaled.jpg",
           PostHead:"Oops! Barack Obama Sparks Reaction After Sharing A Massage About Stimulus Checks & Donald Trump",
-          Date:""
+         Time:""
         }
       ]
   return (
     <div>
  
-       <h1 className='font-bold text-SecondaryColor text-2xl border-l-[4px] border-[#D7AE61] p-2 mx-5 md:mt-0 lg:mx-28 lg:mt-0'>NEWS</h1>
+       <h1 className='font-bold text-PrimaryColor text-2xl border-l-[4px] border-[#D7AE61] p-2 mx-5 mt-5 md:mt-0 lg:mx-28 lg:mt-0'>NEWS</h1>
            
            <div className='min-h-[100vh] bg-[] grid grid-cols-1 mx-5 md:grid md:grid-cols-[65%,35%] md:mt-0 lg:grid lg:grid-cols-[65%,35%] lg:mx-28 lg:mt-5'>
               
@@ -95,7 +95,7 @@ function NewsSecondComponent() {
                             </Link>
   
                             <div className='flex items-center justify-center'>
-                               <Link className='text-[18px] text-start font-Custom font-bold md:text-[16px] lg:text-[17px] hover:text-SecondaryColor duration-75'>{NewsS.Subject}</Link>
+                               <Link className='text-[18px] text-start font-Custom font-bold md:text-[16px] lg:text-[17px] hover:text-PrimaryColor duration-75'>{NewsS.Subject}</Link>
                             </div>
                         </Link>
                      ))}
@@ -110,21 +110,21 @@ function NewsSecondComponent() {
                 </div>
 
               <div className='h-[724px] bg-[]'>
-                    <h1 className='font-Custom font-bold text-[25px] ml-[25px]'>Latest Posts</h1>
-                 {LatestNews.map((LatestNewsS, index)=>(
-                   <div key={index} className='h-[120px] bg-[] border-b-[2px] border-[#8080802f] grid grid-cols-[30%,70%] md:h-[240px] md:grid md:grid-cols-[30%,70%] md:border-b-[.2px] md:border-[#8080802f] lg:h-[100px] lg:grid lg:grid-cols-[25%,75%] lg:mt-4 lg:border-b-[.2px] lg:border-[#8080802f]'>
-                       <Link className='flex items-center justify-start bg-[]'>
-                            <img src={LatestNewsS.Image} className='h-[80px] w-[100px] bg-[]'/>
-                       </Link>
+                <h1 className='font-Custom font-bold text-[25px] ml-[25px]'>Latest Posts</h1>
+                    {LatestNews.map((LatestNewsS, index)=>(
+                      <div key={index} className='h-[120px] bg-[] border-b-[2px] border-[#8080802f] grid grid-cols-[30%,70%] md:h-[240px] md:grid md:grid-cols-[30%,70%] md:border-b-[.2px] md:border-[#8080802f] lg:h-[100px] lg:grid lg:grid-cols-[25%,75%] lg:mt-4 lg:border-b-[.2px] lg:border-[#8080802f]'>
+                          <Link className='flex items-center justify-start bg-[]'>
+                                <img src={LatestNewsS.Image} className='h-[80px] w-[100px] bg-[]'/>
+                          </Link>
 
-                       <div className='flex items-center bg-[]'>
-                          <Link className='text-[15px] pl-3 font-Custom font-medium lg:text-[15px] hover:text-SecondaryColor'>{LatestNewsS.PostHead}</Link>
-                       </div>
+                          <div className='flex items-center bg-[]'>
+                              <Link className='text-[15px] pl-3 font-Custom font-medium lg:text-[15px] hover:text-PrimaryColor'>{LatestNewsS.PostHead}</Link>
+                          </div>
 
-                       <p className='font-medium'>{LatestNewsS.Date}</p>
-                   </div>
-                 ))}
-              </div>
+                          <p className='font-medium'>{LatestNewsS.Date}</p>
+                      </div>
+                    ))}
+                  </div>
 
               <div className='h-[300px] bg-[gold]'></div>
             </div>

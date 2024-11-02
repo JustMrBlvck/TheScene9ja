@@ -29,14 +29,14 @@ function NewsFirstComponent() {
   return (
     <div>
  
-          <div className='min-h-[100vh] bg-[#F4EEF2] mt-10 flex justify-center items-center'>
-              <div className='min-h-[500px] w-full bg-[]  grid grid-cols-1  md:h-[250px] md:w-[90%] md:grid md:grid-cols-[60%,40%] md:top-12 md:left-8 lg:h-[500px] lg:w-[87%] lg:grid lg:grid-cols-[65%,35] lg:top-10 lg:left-24'>
-                  <Link>
+          <div className='min-h-[72vh] bg-[#F4EEF2] mt-10 md:min-h-[35vh] md:flex md:items-center md:justify-center lg:min-h-[100vh] lg:flex lg:items-center lg:justify-center'>
+              <div className='min-h-[280px] bg-[green] w-full grid grid-cols-1 md:h-[250px] md:grid md:grid-cols-[60%,40%] md:mx-14 lg:h-[500px] lg:grid lg:grid-cols-[65%,35] lg:mx-28'>
+                  <Link className='flex justify-end'>
                        <img src={RecentMugshots}/>
                   </Link>
                   
                   <div className='bg-[white] flex justify-center items-center'>
-                      <a href="" className='font-Custom font-bold text-center text-[22px] hover:text-PrimaryColor md:text-[18px] lg:text-3xl lg:leading-[50px]'>
+                      <a href="" className='font-Custom font-bold text-center text-[25px] hover:text-PrimaryColor md:text-[20px] lg:text-3xl lg:leading-[50px]'>
                            Recent Mugshot Of <br />
                            Erik & Lyle <br />
                            Menendez Surface <br />
@@ -51,20 +51,20 @@ function NewsFirstComponent() {
           </div>
 
 
-        <div className=" w-full flex justify-center">
-        <div className='min-h-[380px] bg-[] w-full grid grid-cols-1 gap-8 mt-16  md:w-[90%] md:grid md:grid-cols-2 md:top-[280px] md:left-8 lg:w-[87%] lg:grid lg:grid-cols-4 lg:top-[500px] lg:left-24 lg:gap-8'>
-                {newsHeader.map((News, index)=>(
-                      <Link key={index} className='h-[380px] bg-[] grid grid-rows-2'>
-                      <div className='bg-[]'>
-                         <img src={News.Image} className='object-cover'/>
-                      </div>
+        <div className=" min-h-[30px] bg-[#F4EEF2] lg:flex lg:justify-center md:mx-14 lg:mx-28">
+            <div className='min-h-[300px] bg-[] grid grid-cols-1 md:grid md:grid-cols-2 md:gap-8 lg:grid lg:grid-cols-4 lg:gap-8'>
+                    {newsHeader.map((News, index)=>(
+                          <Link key={index} className='h-[410px] bg-[] grid grid-rows-2 md:h-[340px]'>
+                          <div className='bg-[]'>
+                            <img src={News.Image} className='object-cover'/>
+                          </div>
 
-                      <Link className='bg-[] text-[20px] text-center flex items-center md:justify-center md:items-center text-[#1A1B1D]  font-bold lg:mt-[-10px] lg:flex lg:justify-center lg:items-start'>
-                           <h1 className='font-Custom mt-[90px] md:mt-[20px] hover:text-SecondaryColor'>{News.Headline}</h1>
+                          <Link className='bg-[] text-[20px] text-center flex items-center  md:justify-center md:items-end text-[#1A1B1D]  font-bold lg:mt-[-10px] lg:flex lg:justify-center lg:items-start'>
+                              <h1 className='font-Custom mt-7 mx-3 md:mt-[20px] hover:text-PrimaryColor lg:text-[18px]'>{News.Headline}</h1>
+                          </Link>
                       </Link>
-                  </Link>
-                ))}
-          </div>
+                    ))}
+              </div>
         </div>
  
     </div>
