@@ -16,7 +16,7 @@ function Header() {
                 <div className='bg-[#000] grid grid-cols-[20%,55%,25%] boarder-b-[.3px] border-white'>
                      <div className='flex justify-center items-center'>
                           <button className='text-2xl text-white'><FaBarsStaggered /></button>
-                          <span className='text-SecondaryColor font-Custom font-medium text-[12px] ml-[30px]'>TRENDING</span>
+                          <span className='text-PrimaryColor font-Custom font-medium text-[12px] ml-[30px]'>TRENDING</span>
                      </div>
 
                      <div className='text-[#c7c5c5] flex items-center font-Custom text-[15px]'>
@@ -53,14 +53,14 @@ function Header() {
                      <ul className='flex gap-5'>
                          <li><Link>Entertainment</Link></li>
                          <li><Link>Events</Link></li>
-                         <li><Link>News</Link></li>
+                         <li><Link to='/news'>News</Link></li>
                          <li><Link>Politics</Link></li>
-                         <li><Link>Sports</Link></li>
+                         <li><Link to='/sports'>Sports</Link></li>
                          <li><Link>Tech</Link></li>
                      </ul>
                 </div>
           </div>
-          
+
 
              {/* Mobile Header */}
         <div className='h-[70px] bg-[#000] grid grid-cols-[20%,60%,20%] border-b-[.3px] border-white lg:hidden'>
