@@ -102,15 +102,15 @@ function NewsSecondComponent() {
                 </div>
               
 
-                <div className='bg-[]'>
-                <div className='h-[400px]'>
+                <div className='bg-[] flex flex-col'>
+                <div className='h-[400px] flex justify-center'>
                      <a href="">
                         <img src={"https://www.lindaikejisblog.com/advertss/1681299059.png"}/>
                      </a>
                 </div>
 
-              <div className='h-[724px] bg-[]'>
-                <h1 className='font-Custom font-bold text-[25px] ml-[25px]'>Latest Posts</h1>
+              <div className='h-[724px] bg-[] lg:ml-12'>
+                <h1 className='font-Custom font-bold text-[25px] ml-[-4px]'>Latest Posts</h1>
                     {LatestNews.map((LatestNewsS, index)=>(
                       <div key={index} className='h-[120px] bg-[] border-b-[2px] border-[#8080802f] grid grid-cols-[30%,70%] md:h-[240px] md:grid md:grid-cols-[30%,70%] md:border-b-[.2px] md:border-[#8080802f] lg:h-[100px] lg:grid lg:grid-cols-[25%,75%] lg:mt-4 lg:border-b-[.2px] lg:border-[#8080802f]'>
                           <Link className='flex items-center justify-start bg-[]'>
@@ -124,9 +124,12 @@ function NewsSecondComponent() {
                           <p className='font-medium'>{LatestNewsS.Date}</p>
                       </div>
                     ))}
-                  </div>
 
-              <div className='h-[300px] bg-[gold]'></div>
+              <div className='h-[300px] bg-[gold] flex justify-center md:hidden lg:block'>
+                   <div className='h-[300px] bg-[green]'></div>
+              </div>
+                      
+                  </div>
             </div>
 
 

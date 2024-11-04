@@ -29,7 +29,7 @@ function Header() {
                      <div className='flex justify-center items-center'>
                           <button onClick={HeyNav} className='text-2xl text-white'><FaBarsStaggered />
                             
-                              <SideNav callNav={callNav}/>
+                               <SideNav callNav={callNav}/>
                           
                           </button>
                           <span className='text-PrimaryColor font-Custom font-medium text-[12px] ml-[30px]'>TRENDING</span>
@@ -81,9 +81,9 @@ function Header() {
              {/* Mobile Header */}
         <div className='h-[70px] bg-[#000] grid grid-cols-[20%,60%,20%] border-b-[.3px] border-white lg:hidden'>
              <div className='flex justify-center items-center'>
-                 <button className='text-2xl text-white'><FaBarsStaggered />
+                 <button onClick={HeyNav} className='text-2xl text-white'><FaBarsStaggered />
                  
-                   {/* <SideNav callNav={callNav}/> */}
+                   <SideNav callNav={callNav}/>
 
                  </button>
              </div>
