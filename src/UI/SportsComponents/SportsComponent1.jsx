@@ -38,31 +38,32 @@ function SportsComponent1() {
     ]
   return (
     <div>
-        <div className='min-h-[100px] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[60%,40%] p-[20px] box-border gap-3'>
+        <div className='min-h-[100px] bg-[] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[60%,40%] box-border gap-3'>
             {head.map((heads,index)=>(
                 <Link>
-                    <div key={index} className='min-h-[200px] relative '>
+                    <div key={index} className='min-h-[200px] bg-[] relative '>
                         <div>
                             <img loading='lazy' src={heads.pics} height='100%' width='100%' alt="" />
                         </div>
-                        <div className='absolute min-h-[100px] w-[100%] bg-[#00000072] text-white font-Custom font-bold top-20  md:top-[290px] flex justify-center flex-col text-[1.3rem] md:text-[1.7rem] p-[10px] box-border '>
+
+                        <div className='absolute min-h-[40px] w-[100%] bg-[#00000072] text-white font-Custom font-bold top-20  md:top-[290px] flex justify-center flex-col text-[1.3rem] md:text-[1.7rem] p-[10px] box-border '>
                             <h1 className='hover:text-PrimaryColor'>{heads.text}</h1>
                             <h1>{heads.time}</h1>
                         </div>
- 
-                    </div>
-               
-             
+
+                    </div>     
                 </Link>
             ))}
-            <div className='min-h-[100px] bg mt-2 grid gap-4 md:hidden'>
+            <div className='min-h-[100px] bg-[red] mt-2 grid gap-4 md:hidden'>
                 {header.map((headers, index)=>(
                     <Link>
-                        <div key={index} className='bg w-full flex gap-2'>
+                        <div key={index} className=' w-full flex gap-2'>
+
                             <div className='w-[40%]'>
                              <img src={headers.pics} loading='lazy' width='100%' height='100%' alt="" />
 
                             </div>
+
                             <article className='w-[60%]'>
                                 <h1 className='text-[1.3rem] font-Custom dark:text-black hover:text-PrimaryColor font-bold'>{headers.text}</h1>
                                 <span>{headers.time}</span>
@@ -70,12 +71,8 @@ function SportsComponent1() {
                             
 
                         </div>
-                    
-                    
                     </Link>
-                ))}
-                
-            
+                ))}  
             </div>      
 
             {/* FOR MEDIUM SCREEN */}
@@ -83,7 +80,7 @@ function SportsComponent1() {
 
             <div className='min-h-[100px] bg hidden lg:hidden md:grid gap-8  grid-cols-2'>
                 {header.map((headers, index)=>(
-                    <Link>
+                    <Link key={index}>
                         <div className='bg  flex gap-2 '>
                             <article className='w-[60%]'>
                                 <h1 className='text-[1.3rem] text-black font-Custom dark:text-black font-bold hover:text-PrimaryColor'>{headers.text}</h1>
@@ -103,7 +100,7 @@ function SportsComponent1() {
 
            <div className='min-h-[100px] bg hidden lg:block md:hidden gap-10  grid-cols-2'>
                 {header.map((headers, index)=>(
-                    <Link>
+                    <Link key={index}>
                         <div className='bg  flex  '>
                             <article className='w-[60%]'>
                                 <h1 className='text-[1.3rem] font-Custom dark:text-black font-bold hover:text-PrimaryColor'>{headers.text}</h1>
@@ -116,8 +113,6 @@ function SportsComponent1() {
                         </div>
                     </Link>
                 ))}
-                
-            
             </div>      
 
           

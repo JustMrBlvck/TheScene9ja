@@ -24,7 +24,7 @@ function Header() {
   return (
     <div>
      
-          <div  className='h-[150px] bg-[] hidden md:hidden lg:grid lg:grid-rows-[25%,50%,25%]'>
+          <div  className='h-[150px] w-full bg-[] hidden md:hidden lg:grid lg:grid-rows-[25%,50%,25%]'>
                 <div className='bg-[#000] grid grid-cols-[20%,55%,25%] boarder-b-[.3px] border-white'>
                      <div className='flex justify-center items-center'>
                           <button onClick={HeyNav} className='text-2xl text-white'><FaBarsStaggered />
@@ -65,7 +65,7 @@ function Header() {
                 </div>
 
 
-                <div className='bg-[#FFFF] text-[#1A1B1D] font-Custom font-bold flex justify-center items-center border-b-[2px] '>
+                <div className='bg-[#FFFF] text-[#1A1B1D] font-Custom font-bold flex justify-center items-center border-b-[2px] shadow-lg'>
                      <ul className='flex gap-5'>
                          <li><Link>Entertainment</Link></li>
                          <li><Link>Events</Link></li>

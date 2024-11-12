@@ -4,6 +4,7 @@ import Header from './PrimaryComponent/Header'
 import NewsComponent from './UI/NewsComponents/NewsComponent'
 import SportsComponent from './UI/SportsComponents/SportsComponent'
 import SideNav from './PrimaryComponent/SideNav'
+import GeneralComponent from './UI/GeneralUserInterface/GeneralComponent'
 
 function Container() {
   return (
@@ -15,7 +16,7 @@ function Container() {
                         
                  <Routes>
  
-                        <Route/>
+                        <Route path='*' element={<GeneralComponent/>}/>
                         <Route/>
                         <Route path='/news' element={<NewsComponent/>}/>
                         <Route/>

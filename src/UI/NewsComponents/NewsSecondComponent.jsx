@@ -52,7 +52,7 @@ function NewsSecondComponent() {
           id:1,
           Image:"https://theshaderoom.com/wp-content/uploads/2024/10/Social-Media-Speculates-Dej-Loaf-Is-Calling-For-Lil-Durks-Freedom-After-She-Dropped-THIS-Bold-Message.png",
           PostHead:"Hol's Up! Social Media Thinks Dej Loaf May Have Shared A Now-Delected Message About Lil Durk",
-          Time:""
+          Time:"12 Minutes Ago"
         }, {
           id:2,
           Image:"https://www.lindaikejisblog.com/photos/shares/AYRA%20STARR%201_1729846972.jpg",
@@ -109,26 +109,53 @@ function NewsSecondComponent() {
                      </a>
                 </div>
 
-              <div className='h-[724px] bg-[] lg:ml-12'>
+
+              <div className='h-[790px] bg-[orchid] lg:ml-12'>
                 <h1 className='font-Custom font-bold text-[25px] ml-[-4px]'>Latest Posts</h1>
                     {LatestNews.map((LatestNewsS, index)=>(
-                      <div key={index} className='h-[120px] bg-[] border-b-[2px] border-[#8080802f] grid grid-cols-[30%,70%] md:h-[240px] md:grid md:grid-cols-[30%,70%] md:border-b-[.2px] md:border-[#8080802f] lg:h-[100px] lg:grid lg:grid-cols-[25%,75%] lg:mt-4 lg:border-b-[.2px] lg:border-[#8080802f]'>
+                      <div key={index} className='h-[200px] bg-[green] border-b-[2px] border-[#8080802f] grid grid-cols-[30%,70%] md:h-[240px] md:grid md:grid-cols-[30%,70%] md:border-b-[.2px] md:border-[#8080802f] lg:h-[100px] lg:grid lg:grid-cols-[25%,75%] lg:mt-4 lg:border-b-[.2px] lg:border-[#8080802f]'>
                           <Link className='flex items-center justify-start bg-[]'>
                                 <img src={LatestNewsS.Image} className='h-[80px] w-[100px] bg-[]'/>
                           </Link>
 
-                          <div className='flex items-center bg-[]'>
+                          <div className='flex justify-center items-center flex-col  bg-[red]'>
                               <Link className='text-[15px] pl-3 font-Custom font-medium lg:text-[15px] hover:text-PrimaryColor'>{LatestNewsS.PostHead}</Link>
+                              <p className='text-[10px]'>{LatestNewsS.Time}</p>
                           </div>
 
-                          <p className='font-medium'>{LatestNewsS.Date}</p>
                       </div>
                     ))}
 
-              <div className='h-[300px] bg-[gold] flex justify-center md:hidden lg:block'>
-                   <div className='h-[300px] bg-[green]'></div>
-              </div>
-                      
+{/*               
+              <div className='h-[400px]  flex justify-center'>
+                     <a href="">
+                        <img src={"https://www.lindaikejisblog.com/advertss/1681299059.png"}/>
+                     </a>
+                </div> */}
+
+{/* 
+              <div className='h-[230px] bg-[] md:hidden lg:flex lg:justify-center'>
+                   <div className='h-[230px] bg-[#F4F4F4] flex items-center justify-center flex-col rounded-lg mt-2 text-center'>
+                         <h1 className='font-Custom font-bold text-2xl'>Join Our <span className='text-PrimaryColor'>19,894,217</span> Email <br />
+                              Subcribers
+                         </h1>
+
+                         <p className='font-medium text-[14px] mt-3'>
+                            Not you missing out on our newsletter, tap <br />
+                            
+                            in & sign up!
+                         </p>
+
+                         <input className='h-[40px] w-[250px] font-medium p-5 rounded-md mt-7 focus:outline-none focus:ring-2 focus:ring-blue-500' type="text" 
+                         
+                           
+                         placeholder='Email Address'/>
+
+                         <button className='bg-PrimaryColor px-4 py-2 mt-[-40px] mr-[-220px] font-bold rounded-[100%]'>A</button>
+                   </div>
+              </div> */}
+
+
                   </div>
             </div>
 
