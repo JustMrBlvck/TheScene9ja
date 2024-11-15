@@ -64,7 +64,7 @@ function NewsFirstComponent() {
                           </Link>
                       </Link>
                     ))}
-              </div>
+             </div>
         </div>
  
     </div>

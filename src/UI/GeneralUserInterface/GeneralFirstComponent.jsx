@@ -56,7 +56,7 @@ function GeneralFirstComponent() {
                   </div>
 
                 
-                  <div className='h-[200px] p-0 md:p-3 mt-9 md:border-[#8080802f] grid grid-cols-1 gap-14 md:grid md:grid-cols-2 md:gap-8 md:border-t-[.2px]'>
+                  <div className='h-[200px] p-0 md:p-3 mt-9 md:border-[#8080802f] grid grid-cols-1 gap-14 space-y-5  md:grid md:grid-cols-2 md:gap-8 md:border-t-[.2px]'>
                         {
                           [
                             {
@@ -86,16 +86,16 @@ function GeneralFirstComponent() {
                                     <img src={newsItemsM.imageSrc} className='object-cover'/>
                                   </div>
 
-                                  <Link className='bg-[]  text-[#1A1B1D] flex justify-start items-start font-bold'>
-                                      <h1 className='font-Custom mt-4  hover:text-PrimaryColor text-[19px]'>{newsItemsM.title}</h1>
+                                  <Link className='bg-[] mt-4  text-[#1A1B1D] flex justify-start items-start font-bold'>
+                                      <h1 className='font-Custom  hover:text-PrimaryColor text-[19px]'>{newsItemsM.title}</h1>
                                   </Link>
                               </Link>
                           ))}
                   </div>
 
-                  <div className='md:border-[#8080802f] md:border-l-[.2px] md:mt-5 md:p-5'>
-                       <h1 className='font-Custom text-PrimaryColor text-[15px] font-bold'>Latest Stories</h1>
-                  <div className="space-y-4 mt-[235%] md:mt-72">
+                  <div className='md:border-[#8080802f] md:border-l-[.2px] mt-[258%] md:mt-[50%] md:p-5'>
+                       <h1 className='font-Custom text-PrimaryColor text-[35px] font-bold'>Latest Stories</h1>
+                  <div className="space-y-4">
                        {
                         [
                           {
@@ -119,13 +119,11 @@ function GeneralFirstComponent() {
                           time: "5 hours ago"
                          },
                         ].map((medium, index)=>(
-                          <div key={index} className="flex items-center space-x-4">
-                          <img src={medium.imageSrc} className="w-20 h-20 rounded-lg  object-cover" />
-                          <Link className="text-[20px] font-Custom font-medium text-gray-700  hover:text-PrimaryColor">{medium.headline}
-                          
-                             <p className='text-[16px] mt-1'>{medium.time}</p>
-                          </Link>
-                        </div>
+                            <div key={index} className="flex items-center space-x-4">
+                                <img src={medium.imageSrc} className="w-20 h-20 rounded-lg  bg-[red] object-cover" />
+
+                                <Link className="text-[20px] font-Custom font-medium text-gray-700  hover:text-PrimaryColor">{medium.headline}<p className='text-[16px] mt-1'>{medium.time}</p></Link>
+                            </div>
                         ))}
                   </div>
               </div>
