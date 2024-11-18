@@ -67,10 +67,10 @@ function Header() {
 
                 <div className='bg-[#FFFF] text-[#1A1B1D] font-Custom font-bold flex justify-center items-center border-b-[2px] shadow-lg'>
                      <ul className='flex gap-5'>
-                         <li><Link>Entertainment</Link></li>
+                         <li><Link to='/entertainment'>Entertainment</Link></li>
                          <li><Link>Events</Link></li>
                          <li><Link to='/news'>News</Link></li>
-                         <li><Link>Politics</Link></li>
+                         <li><Link to='/politics'>Politics</Link></li>
                          <li><Link to='/sports'>Sports</Link></li>
                          <li><Link>Tech</Link></li>
                      </ul>
