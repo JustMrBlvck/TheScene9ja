@@ -47,7 +47,7 @@ function GeneralFirstComponent() {
                         </div>
                           
                         <div className='bg-[] flex items-center'>
-                             <Link className='font-Custom font-bold text-2xl  hover:text-PrimaryColor'>
+                             <Link className='font-Custom font-bold text-2xl hover:text-PrimaryColor'>
                                     {TopStories.HeadLine}
                               </Link>
                         </div>
@@ -132,7 +132,7 @@ function GeneralFirstComponent() {
 
                       {/* Lg General Section */}
             <div className='w-[90%] lg:w-9/12 mt-14 hidden lg:block'>
-                  <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Top Stories</h1>
+                  <h1 className='font-Custom text-PrimaryColor text-3xl font-bold'>Top Stories</h1>
 
                      <div className="min-h-[100vh] mt-7 grid grid-cols-[65%,35%] space-x-4 border-[#8080802f] border-t-[.2px] border-b-[.2px]">
                           <div className='mt-5'>
@@ -157,11 +157,11 @@ function GeneralFirstComponent() {
                                         </Link>
                                     </Link>
                                   ))}
-                               </div> 
+                               </div>  
                           </div>
 
                           <div className='border-[#8080802f] border-l-[.2px] mt-5 p-5'>
-                                <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Latest Stories</h1>
+                                <h1 className='font-Custom text-PrimaryColor text-3xl font-bold'>Latest Stories</h1>
                                 
                                 <div className="space-y-4 mt-5">
                                   {[
@@ -195,7 +195,7 @@ function GeneralFirstComponent() {
                                       <img src={headlineS.imageSrc} className="w-20 h-20 rounded-lg  object-cover" />
                                       <Link className="text-[20px] font-Custom font-medium text-gray-700  hover:text-PrimaryColor">{headlineS.headline}
                                       
-                                         <p className='text-[16px] mt-1'>{headlineS.time}</p>
+                                         <p className='text-[16px] mt-1 text-black'>{headlineS.time}</p>
                                       </Link>
                                     </div>
                                   ))}
