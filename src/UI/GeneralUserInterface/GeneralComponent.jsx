@@ -1,6 +1,8 @@
 import React from 'react'
 import GeneralFirstComponent from './GeneralFirstComponent'
 import GeneralSecondComponent from './GeneralSecondComponent'
+import GeneralThirdComponent from './GeneralThirdComponent'
+import GeneralFourthComponent from './GeneralFourthComponent'
 
 function GeneralComponent() {
   return (
@@ -8,6 +10,8 @@ function GeneralComponent() {
          
             <GeneralFirstComponent/>
             <GeneralSecondComponent/>
+            <GeneralThirdComponent/>
+            <GeneralFourthComponent/>
 
     </div>
   )

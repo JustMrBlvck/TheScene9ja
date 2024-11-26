@@ -126,14 +126,7 @@ function NewsSecondComponent() {
                       </div>
                     ))}
 
-{/*               
-              <div className='h-[400px]  flex justify-center'>
-                     <a href="">
-                        <img src={"https://www.lindaikejisblog.com/advertss/1681299059.png"}/>
-                     </a>
-                </div> */}
 
-{/* 
               <div className='h-[230px] bg-[] md:hidden lg:flex lg:justify-center'>
                    <div className='h-[230px] bg-[#F4F4F4] flex items-center justify-center flex-col rounded-lg mt-2 text-center'>
                          <h1 className='font-Custom font-bold text-2xl'>Join Our <span className='text-PrimaryColor'>19,894,217</span> Email <br />
@@ -153,7 +146,7 @@ function NewsSecondComponent() {
 
                          <button className='bg-PrimaryColor px-4 py-2 mt-[-40px] mr-[-220px] font-bold rounded-[100%]'>A</button>
                    </div>
-              </div> */}
+              </div>
 
 
                   </div>
