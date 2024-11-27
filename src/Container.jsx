@@ -18,7 +18,7 @@ function Container() {
                         <Header/>
                         
                  <Routes>
-                        <Route path='*' element={<GeneralComponent/>}/>
+                        <Route path='/' element={<GeneralComponent/>}/>
                         <Route path='/entertainment' element={<EntertainmentComponent/>}/>
                         <Route path='/news' element={<NewsComponent/>}/>
                         <Route path='/politics' element={<PoliticsComponent/>}/>

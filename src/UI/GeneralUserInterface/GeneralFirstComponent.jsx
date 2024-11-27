@@ -9,7 +9,7 @@ function GeneralFirstComponent() {
          SubHeadLine: "How I Would Handled Subsidy Removal, FX Reforms As President - Atiku"
       }
 
-      const newsItems = [
+      const topStoriesArray = [
         {
           id:1,
           imageSrc: 'https://www.channelstv.com/wp-content/uploads/2024/11/Nigerians-wh-o-won-elecions.jpg', 
@@ -36,7 +36,7 @@ function GeneralFirstComponent() {
                  <img src={"https://dsp-media.eskimi.com/upload/142402_2123234271_0bd86081fa39063dcaeca9893dde821d.jpg"} />
            </div>
                           {/* Mobile and Medium Screens General Section */}
-            <div className='w-[90%] mt-14 md:block lg:hidden'>
+            <div className='w-[95%] mt-14 md:block lg:hidden'>
                     <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Top Stories</h1>
 
                   <div className='md:min-h-[200px] bg-[] grid grid-cols-1 md:grid md:grid-cols-[40%,60%] mt-5 border-[#8080802f] border-t-[.2px]'>
@@ -47,7 +47,7 @@ function GeneralFirstComponent() {
                         </div>
                           
                         <div className='bg-[] flex items-center'>
-                             <Link className='font-Custom font-bold text-2xl hover:text-PrimaryColor'>
+                             <Link className='font-Custom font-bold text-2xl mt-5 hover:text-PrimaryColor'>
                                     {TopStories.HeadLine}
                               </Link>
                         </div>
@@ -81,19 +81,19 @@ function GeneralFirstComponent() {
                             },
                            
                           ].map((newsItemsM, index)=>(
-                             <Link key={index} className='h-[200px] bg-[] grid'>
-                                  <div className='bg-[]'>
+                             <Link key={index} className='h-[220px] bg-[]  space-y-5  grid'>
+                                  <Link className='bg-[]'>
                                     <img src={newsItemsM.imageSrc} className='object-cover'/>
-                                  </div>
+                                  </Link>
 
-                                  <Link className='bg-[] mt-4  text-[#1A1B1D] flex justify-start items-start font-bold'>
+                                  <Link className='text-[#1A1B1D] flex justify-start items-start font-bold'>
                                       <h1 className='font-Custom  hover:text-PrimaryColor text-[19px]'>{newsItemsM.title}</h1>
                                   </Link>
                               </Link>
                           ))}
                   </div>
 
-                  <div className='md:border-[#8080802f] md:border-l-[.2px] mt-[258%] md:mt-[50%] md:p-5'>
+                  <div className='md:border-[#8080802f] md:border-l-[.2px] mt-[269%] md:mt-[50%] md:p-5'>
                        <h1 className='font-Custom text-PrimaryColor text-[35px] font-bold'>Latest Stories</h1>
                   <div className="space-y-4">
                        {
@@ -146,7 +146,7 @@ function GeneralFirstComponent() {
 
 
                                <div className='h-[200px] p-3 mt-9 border-[#8080802f] grid grid-cols-3 gap-8 border-t-[.2px]'>
-                                  {newsItems.map((newsItemsS, index)=>(
+                                  {topStoriesArray.map((newsItemsS, index)=>(
                                         <Link key={index} className='h-[200px] bg-[] grid'>
                                         <div className='bg-[]'>
                                           <img src={newsItemsS.imageSrc} className='object-cover'/>

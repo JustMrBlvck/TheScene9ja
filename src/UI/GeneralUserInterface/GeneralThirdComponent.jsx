@@ -89,7 +89,7 @@ function GeneralThirdComponent() {
                          <div className='space-y-4  bg-[#EAF6FC] '>
                             {sportsHeading.map((sportsHeadingS, index)=>(
                                   <div key={index} className='flex items-center border-b-[3px] border-PrimaryColor space-x-5'>
-                                      <img src={sportsHeadingS.imgSrc} className='h-[200px] w-[200px] bg-[green]'/>
+                                      <img src={sportsHeadingS.imgSrc} className='h-[170px] w-[170px] bg-[green]'/>
 
                                       <Link className='font-Custom font-bold hover:text-PrimaryColor text-[20px]'>{sportsHeadingS.heading}</Link>
                                   </div>
