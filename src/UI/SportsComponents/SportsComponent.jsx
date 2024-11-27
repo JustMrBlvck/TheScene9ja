@@ -12,14 +12,14 @@ import SportsComponent8 from './SportsComponent8'
 
 function SportsComponent() {
   return (
-    <div  >
+    <div className=''  >
           <SportsComponent1/>
           <SportsComponent2/>
-      <SportsAdvert1/>
+          <SportsAdvert1/>
           <SportsComponent3/>
           <SportsComponent4/>
           <SportsComponent5/>
-      <SportsAvert2/>
+          <SportsAvert2/>
           <SportsComponent6/>
           <SportsComponent7/>
           <SportsComponent8/>

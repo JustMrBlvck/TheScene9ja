@@ -37,7 +37,7 @@ function SportsComponent1() {
         
     ]
   return (
-    <div>
+    <div >
         <div className='min-h-[100px] bg-[] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[60%,40%] box-border gap-3'>
             {head.map((heads,index)=>(
                 <Link>
