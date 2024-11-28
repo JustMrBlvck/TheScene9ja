@@ -77,7 +77,6 @@ function Header() {
                 </div>
           </div>
 
-
              {/* Mobile Header */}
         <div className='h-[70px] bg-[#000] grid grid-cols-[20%,60%,20%] border-b-[.3px] border-white lg:hidden'>
              <div className='flex justify-center items-center'>
