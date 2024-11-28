@@ -28,12 +28,12 @@ function Header() {
           <div  className='h-[150px] w-full bg-[] hidden md:hidden lg:grid lg:grid-rows-[25%,50%,25%]'>
                 <div className='bg-[#000] grid grid-cols-[20%,55%,25%] boarder-b-[.3px] border-white'>
                      <div className='flex justify-center items-center'>
-                          <button onClick={HeyNav} className='text-2xl text-white'><FaBarsStaggered />
+                          {/* <button onClick={HeyNav} className='text-2xl text-white'><FaBarsStaggered />
                             
                                <SideNav callNav={callNav}/>
                           
-                          </button>
-                          <span className='text-PrimaryColor font-Custom font-medium text-[12px] ml-[30px]'>TRENDING</span>
+                          </button> */}
+                          <span className=' text-white font-Custom font-medium text-[12px] ml-[30px]'>TRENDING</span>
                      </div>
 
                      <div className='text-[#c7c5c5] flex items-center font-Custom text-[15px]'>
