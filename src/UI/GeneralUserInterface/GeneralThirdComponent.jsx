@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom'
 function GeneralThirdComponent() {
     
   const Sports = {
-    topicSubHeading: "Slot Warns Southampton Slip-Up Ahead Of Liverpool's 'Increadible' Week",
-    imgSrc: 'https://www.channelstv.com/wp-content/uploads/2024/11/liverpool.jpg',
-    topicHeadline:"Slot has made a remarkable start to his time in charge of the Reds, winning 15 of his first 17 games in all competitions.",
-    poster:"Emmanuel Imeh-Clememt"
+    topicSubHeading: "Liverpool Beat Real Madrid To Go Top Of Champions League Table",
+    imgSrc: 'https://www.channelstv.com/wp-content/uploads/2024/11/Liverpool-1.jpg',
+    topicHeadline:"Second-half goals from Alexis Mac Allister and Cody Gakpo were enough to give Arne Slot's team victory.",
+    poster:"Donatus Anichukwueze"
   }
 
 
 
   const SportsS = {
-    imgSrc: 'https://www.channelstv.com/wp-content/uploads/2024/11/Boniface.jpg',
-    headline: 'Goal-Shy: Victor Boniface Suruggles to Replicate Club Form With Super Eagles',
-    miniHeadline: 'Last season, Boniface netted 21 goals and bagged 10 assists in 34 matches for Xabi Alonso’s charges who won an impressive domestic double.',
-    poster: 'Tom Jones Usen'
+    imgSrc: 'https://www.channelstv.com/wp-content/uploads/2022/12/FIFA-chief-Gianni-Infantino-2.jpg',
+    headline: "FIFA’s 2022 World Cup Legacy Fund To Donate Money To WHO, WTO And UNHCR",
+    miniHeadline: "In its 2022 annual financial report, FIFA announced a gross profit of nearly $5.8 billion from the tournament in Qatar that year.",
+    poster: "Donatus Anichukwueze"
   }
 
 
@@ -39,39 +39,39 @@ function GeneralThirdComponent() {
   return (
     <div className='bg-[white] flex flex-col items-center'>
         
-            <div className='w-9/12 bg-[] mt-14'>
+            <div className='w-[95%] mt-14 lg:w-9/12'>
                 <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Sports</h1>
 
-                <div className='min-h-[650px] mt-2 border-t-[.2px] border-[#8080802f] gap-7 grid grid-cols-[75%,25%]'>
+                <div className='min-h-[650px] w-[100%] md:w-[100%] mt-2 border-t-[.2px] border-[#8080802f] gap-7 grid grid-cols-1 lg:grid lg:grid-cols-[75%,25%]'>
                       <div className='bg-[#EAF6FC] flex justify-center mt-5 border-t-[3px] border-PrimaryColor'>
                             <div className=''>      
-                                  <div className='flex items-center space-x-1 ml-5 mt-3'>
+                                  <div className='flex items-center space-x-1 md:ml-0 lg:ml-5 mt-3'>
                                       <div className='h-[8px] w-[8px] bg-[#791212]'></div><Link className='text-[16px] font-Custom'>SPORTS</Link>  
                                   </div>
 
-                                  <Link><img src={Sports.imgSrc} className='mt-5 ml-7'/></Link>
+                                  <Link><img src={Sports.imgSrc} className='w-[98%] md:w-[98%]  md:ml-0 mt-5 lg:w-[95%] lg:ml-7'/></Link>
 
-                                  <Link className='font-Custom font-bold text-3xl text-[#1B1C1D] hover:text-PrimaryColor'><p className='ml-7 mt-4'>{Sports.topicSubHeading}</p></Link>
+                                  <Link className='font-Custom font-bold md:text-2xl lg:text-3xl text-[#1B1C1D] hover:text-PrimaryColor'><p className=' md:ml-0 lg:ml-7 mt-4 '>{Sports.topicSubHeading}</p></Link>
 
-                                  <p className='font-Custom font-medium ml-7 mt-2 w-[380px] text-PrimaryColor'>{Sports.topicHeadline}</p>
+                                  <p className='font-Custom font-medium ml-7 md:ml-0 lg:ml-7 mt-2 w-[380px] hidden md:block lg:block text-PrimaryColor'>{Sports.topicHeadline}</p>
 
-                                  <div className='flex items-center space-x-1  ml-5 mt-3 font-Custom font-bold text-[#004081]'>
+                                  <div className='flex items-center space-x-1 md:ml-0 lg:ml-5 mt-3 font-Custom font-bold text-[#004081]'>
                                      <div className='h-[8px] w-[8px] bg-[#791212]'></div><p className='text-[16px] font-Custom'>{Sports.poster}</p>  
                                   </div>
                             </div>
                        </div>
 
 
-                     <div className='bg-[] mt-5 border-t-[3px] border-PrimaryColor'>
+                     <div className='mt-5 border-t-[3px] border-PrimaryColor'>
                          <div className='bg-[#EAF6FC]'>
-                              <Link>  <img src={SportsS.imgSrc} /> </Link>
+                              <Link>  <img src={SportsS.imgSrc} className='md:w-[100%]'/> </Link>
                               
                               <div className='p-3'>        
                                   <Link>
-                                        <p className='font-Custom font-bold text-[20px] text-[#1B1C1D] hover:text-PrimaryColor'>{SportsS.headline}</p>
+                                        <p className='font-Custom font-bold md:text-[25px] lg:text-[20px] text-[#1B1C1D] hover:text-PrimaryColor'>{SportsS.headline}</p>
                                   </Link>
 
-                                  <p className='mt-2 w-5/3 text-[16px] font-Custom'>
+                                  <p className='mt-2 w-5/3 md:text-[22px] lg:text-[16px] font-Custom'>
                                        {SportsS.miniHeadline}
                                   </p>
                                     
@@ -85,7 +85,7 @@ function GeneralThirdComponent() {
                 </div>   
 
 
-                  <div className='min-h-[450px] p-3 gap-4 mt-28 grid grid-cols-[73%,27%]'>  
+                  <div className='min-h-[450px] p-3 gap-4 mt-20 grid grid-cols-1 md:grid md:grid-cols-[73%,27%]'>  
                          <div className='space-y-4  bg-[#EAF6FC] '>
                             {sportsHeading.map((sportsHeadingS, index)=>(
                                   <div key={index} className='flex items-center border-b-[3px] border-PrimaryColor space-x-5'>
@@ -99,7 +99,7 @@ function GeneralThirdComponent() {
                                        {/* Sports Advert SideDiv */}
                         <div className=''>
                                           {/* Advert SideDiv 1 */}
-                             <div className='h-[200px] '><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif?fit=300%2C250&ssl=1"}/></a></div>
+                             <div className='h-[200px] '><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
                                                
                                         {/* Advert SideDiv  */}
                              <div className='h-[200px] mt-10'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} alt="" /></a></div>

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 function GeneralFirstComponent() {
 
       const TopStories = {
-         HeadLine: "Atiku Envious Of Tinubu's Position, Misconstrues Nigeria's Realities - Presidency",
-         ImageSrc: "https://www.channelstv.com/wp-content/uploads/2023/10/Untitled-design-4.png",
-         SubHeadLine: "How I Would Handled Subsidy Removal, FX Reforms As President - Atiku"
+         HeadLine: "‘Nothing To Show For Over 60 Taxes, Levies Collected Across Nigeria’, Oyedele Alleges",
+         ImageSrc: "https://www.channelstv.com/wp-content/uploads/2023/10/Untitled-design-65.png",
+         SubHeadLine: "He further noted that the FG intends to halt the situation where Nigerian businesses are forced to pay tax even in the face of losses"
       }
 
       const topStoriesArray = [
@@ -17,23 +17,27 @@ function GeneralFirstComponent() {
         },
         {
           id:2,
-          imageSrc: 'https://www.channelstv.com/wp-content/uploads/2023/11/Untitled-design-8-2.png', 
-          title: 'NiDCOM Congratulates More Nigerians Who Won Elections Abroad',
+          imageSrc: 'https://www.channelstv.com/wp-content/uploads/2024/09/Tinubu-Jet-Arrives.jpg',
+          title: "Tinubu Arrives In France",
         },
         {
           id:3,
-          imageSrc: 'https://www.channelstv.com/wp-content/uploads/2024/11/Tinubu.jpg',
-          title: 'Tinubu Demands End To Israel Aggression In Gaza At Saudi Arabia',
+          imageSrc: 'https://www.channelstv.com/wp-content/uploads/2024/06/Nigerian-Senate.jpg',
+          title: 'Uproar Over Tax Bill As Lawmakers Protest FIRS Chair’s Entry To Upper Chamber',
         },
       ];  
 
+          //Advert Box Object
+          const advertBox = {
+             AD: "https://dsp-media.eskimi.com/upload/142402_2123234271_0bd86081fa39063dcaeca9893dde821d.jpg",
+          }
 
   return (
     <div className='bg-[white] flex flex-col items-center'>
 
                      {/* Advert Box */}
-           <div className='h-[100px] w-full md:hidden lg:w-9/12 bg-[#F6F6F6] lg:flex items-center justify-center mt-10'> 
-                 <img src={"https://dsp-media.eskimi.com/upload/142402_2123234271_0bd86081fa39063dcaeca9893dde821d.jpg"} />
+           <div className='h-[100px] w-[95%] md:hidden lg:w-9/12 bg-[#F6F6F6] flex items-center justify-center mt-10'> 
+                 <img src={advertBox.AD} />
            </div>
                           {/* Mobile and Medium Screens General Section */}
             <div className='w-[95%] mt-14 md:block lg:hidden'>
@@ -66,8 +70,8 @@ function GeneralFirstComponent() {
                             },
                             {
                               id:2,
-                              imageSrc: 'https://www.channelstv.com/wp-content/uploads/2023/11/Untitled-design-8-2.png', 
-                              title: 'NiDCOM Congratulates More Nigerians Who Won Elections Abroad',
+                              imageSrc: 'https://www.channelstv.com/wp-content/uploads/2024/06/Nigerian-Senate.jpg', 
+                              title: "Uproar Over Tax Bill As Lawmakers Protest FIRS Chair’s Entry To Upper Chamber",
                             },
                             {
                               id:3,
@@ -81,8 +85,8 @@ function GeneralFirstComponent() {
                             },
                            
                           ].map((newsItemsM, index)=>(
-                             <Link key={index} className='h-[220px] bg-[]  space-y-5  grid'>
-                                  <Link className='bg-[]'>
+                             <Link key={index} className='min-h-[220px] space-y-5'>
+                                  <Link>
                                     <img src={newsItemsM.imageSrc} className='object-cover'/>
                                   </Link>
 
@@ -93,7 +97,7 @@ function GeneralFirstComponent() {
                           ))}
                   </div>
 
-                  <div className='md:border-[#8080802f] md:border-l-[.2px] mt-[269%] md:mt-[50%] md:p-5'>
+                  <div className='md:border-[#8080802f] md:border-l-[.2px] mt-[269%] md:mt-[55%] md:p-5'>
                        <h1 className='font-Custom text-PrimaryColor text-[35px] font-bold'>Latest Stories</h1>
                   <div className="space-y-4">
                        {
@@ -142,7 +146,7 @@ function GeneralFirstComponent() {
 
                                <Link className='font-Custom font-bold text-3xl mt-3 hover:text-PrimaryColor'>{TopStories.HeadLine}</Link>
 
-                               <div className='w-1/2 mt-5'><Link className='font-[cursive] text-PrimaryColor font-bold text-[16px]'>{TopStories.SubHeadLine}</Link></div>
+                               <div className='w-1/2 mt-3'><Link className='font-Custom text-PrimaryColor font-medium text-[16px]'>{TopStories.SubHeadLine}</Link></div>
 
 
                                <div className='h-[200px] p-3 mt-9 border-[#8080802f] grid grid-cols-3 gap-8 border-t-[.2px]'>

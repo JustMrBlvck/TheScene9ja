@@ -33,7 +33,7 @@ function Header() {
                                <SideNav callNav={callNav}/>
                           
                           </button> */}
-                          <span className=' text-white font-Custom font-medium text-[12px] ml-[30px]'>TRENDING</span>
+                          <span className=' text-white font-Custom font-medium text-[12px] ml-[30px]'></span>
                      </div>
 
                      <div className='text-[#c7c5c5] flex items-center font-Custom text-[15px]'>

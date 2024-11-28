@@ -8,6 +8,7 @@ import GeneralComponent from './UI/GeneralUserInterface/GeneralComponent'
 import EntertainmentComponent from './UI/EntertainmentComponent.jsx/EntertainmentComponent'
 import PoliticsComponent from './UI/PoliticsComponent/PoliticsComponent'
 import TechnologyComponent from './UI/TechnologyComponent/TechnologyComponent'
+import Footer from './PrimaryComponent/Footer'
 
 function Container() {
   return (
@@ -25,6 +26,8 @@ function Container() {
                         <Route path='/sports' element={<SportsComponent/>}/>
                         <Route path='/technology' element={<TechnologyComponent/>}/>
                  </Routes>
+
+                       <Footer/>
           
           </BrowserRouter>
 
