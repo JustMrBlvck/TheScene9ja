@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function PoliticsFirstComponent({ politicsNews = [], politicsHead = [], subpolitics=[] }) {
+function PoliticsFirstComponent({  politicsHead = [],
+  politicsNews = [],
+  subpolitics = [],
+  politicsMain = [],
+  totalPages,
+  currentPage,
+  paginate, }) {
   return (
     <div className="">
-      <div className="min-h-[100px] bg-blue-300 flex flex-col items-center">
+      <div className="min-h-[100px] bg flex flex-col items-center">
         <div className="min-h-[100px] bg-[yellow] w-full md:w-[97%] lg:w-[90%]">
           <h1>place an advert here</h1>
         </div>
@@ -104,9 +110,44 @@ function PoliticsFirstComponent({ politicsNews = [], politicsHead = [], subpolit
         
         </div>
 
-        <div className="min-h-[100px] w-full md:w-[95%] lg:w-[90%]  bg-blue-800  mt-4">
+        <div className="min-h-[100px] w-full md:w-[95%] lg:w-[90%] grid-cols-1  grid md:grid-cols-1 lg:grid-cols-[80%,20%] mt-4">
+          <div className=" bg  grid grid-cols-1 md:grid-cols-2  gap-3 lg:grid-cols-3  ">
+            {politicsMain.map((politicsMainn,index)=>(
+              <Link key={index}>
+                  <div>
+                    <img src={politicsMainn.img} alt="" />
+                  </div>
+                  <div className="dark:text-white font-Custom hover:text-PrimaryColor font-bold text-[1.2rem] capitalize">
+                    <h3>{politicsMainn.about}</h3>
+
+                  </div>
+
+              </Link>
+
+
+            ))}
+
+          </div>
+          <div className="bg-yellow-300 grid grid-rows-2 mt-2">
+            <h1>
+              place an advert here
+            </h1>
+
+          </div>
 
         </div>
+        <div className="pagination-controls flex justify-center mt-4">
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i + 1}
+              className={`btn ${currentPage === i + 1 ? "btn-active" : ""}`}
+              onClick={() => paginate(i + 1)}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </div>
+        
       </div>
     </div>
   );
