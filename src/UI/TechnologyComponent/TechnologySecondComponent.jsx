@@ -106,6 +106,60 @@ function TechnologySecondComponent() {
             reporter:'SCENE 9JA'
         }
     ]
+
+
+
+    const ads=[
+        {
+            id:1,
+            image:'https://sunrise.ng/wp-content/uploads/2024/08/336x280-1.png'
+        },
+
+        {
+            id:2,
+            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2024/07/NNPLC.jpeg?w=336&ssl=1'
+        },
+
+        {
+            id:3,
+            image:'https://dsp-media.eskimi.com/upload/143900_3394522394_8b67b037f2f96b79dcf29fd68db0ca86.jpg'
+        },
+
+        {
+            id:4,
+            image:'https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg'
+        },
+
+        {
+            id:5,
+            image:'https://sunrise.ng/wp-content/uploads/2024/11/Omi-BUS.jpeg'
+        },
+
+        {
+            id:6,
+            image:'https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png'
+        },
+
+        {
+            id:7,
+            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif?fit=300%2C250&ssl=1'
+        },
+
+        {
+            id:8,
+            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-26-at-6.51.50-PM.jpeg?fit=1080%2C133&ssl=1'
+        },
+
+        {
+            id:9,
+            image:'https://track.pisimobile.com/r/BclvjvZVfCzHNcwWAVCzyC_c5X3T6_C_9EODNLRVbw43NDZhMWI1ZjQ2MTUzZmZj/upload/143942_2887916580_32e2fd6abb14ba6f6f17b2775fa616b3.jpg'
+        },
+
+        {
+            id:10,
+            image:'https://track.pisimobile.com/r/BclvjvZVfCzHNcwWAVCzyC_c5X3T6_C_9EODNLRVbw43NDZhMWI1ZjQ2MTUzZmZj/upload/143942_2887916580_32e2fd6abb14ba6f6f17b2775fa616b3.jpg'
+        }
+    ]
   return (
     <div>
         <div className=" min-h-[400px] w-full bg-[] flex justify-center ">
@@ -122,19 +176,19 @@ function TechnologySecondComponent() {
                     </div>
                 </div>
 
-                    <div className="  min-h-[200px] md:min-h-[300px] mt-3 w-full grid grid-cols-1 gap-4 md:gap-0">
+                    <div className="  min-h-[200px] md:min-h-[300px] mt-3 w-full grid grid-cols-1 md:gap-0">
 
                     {
                         news.map((news)=>(
-                            <div key={news.id} className=" md:min-h-[300px] h-[160px] mb-3  w-full bg-[] grid grid-cols-2 md:grid-cols-[40%,50%,10%] lg:grid-cols-2 gap-3 md:gap-3">
+                            <div key={news.id} className=" md:min-h-[300px] min-h-[160px] mb-3  w-full bg-[] grid grid-cols-2 md:grid-cols-[40%,50%,10%] lg:grid-cols-2 gap-3 md:gap-3">
 
-                            <div className=" bg-[] h-[300px] relative">
+                            <div className=" bg-[] min-h-[160px] md:h-[300px] relative">
                             <aside className=' h-[30px] min-w-[80px] text-[10px] absolute top-3 left-3  bg-PrimaryColor text-white flex justify-center items-center'>
                                 <p>{news.newstag}</p>
                             </aside>
                             <img src={news.image}  alt="" />
                         </div>
-                        <div className=" bg-[] md:min-h-[350px]">
+                        <div className=" bg-[]  md:min-h-[350px]">
                             <section className=' font-bold text-[17px] md:text-[22px] hover:text-PrimaryColor '>
                                 <p>{news.newshead}</p>
                             </section>
@@ -164,7 +218,15 @@ function TechnologySecondComponent() {
 
 
 
-            <div className="min-h-[300px] bg-orange-300"></div>
+            <div className="min-h-[300px] bg-[] grid grid-cols-1 gap-10 p-10">
+                {
+                    ads.map((ads)=> (
+                        <div key={ads.id} className=" h-[300px] w-[70%] bg-[]">
+                    <img src={ads.image} alt="" />
+                </div>
+                    ))
+                }
+            </div>
             </div>
        
         </div>
