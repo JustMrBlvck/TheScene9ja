@@ -42,14 +42,14 @@ function GeneralThirdComponent() {
             <div className='w-[95%] mt-14 lg:w-9/12'>
                 <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Sports</h1>
 
-                <div className='min-h-[650px] w-[100%] md:w-[100%] mt-2 border-t-[.2px] border-[#8080802f] gap-7 grid grid-cols-1 lg:grid lg:grid-cols-[75%,25%]'>
+                <div className='min-h-[500px] w-[100%] md:w-[100%] mt-2 border-t-[.2px] border-[#8080802f] gap-7 grid grid-cols-1 lg:grid lg:grid-cols-[75%,25%]'>
                       <div className='bg-[#EAF6FC] flex justify-center mt-5 border-t-[3px] border-PrimaryColor'>
                             <div className=''>      
                                   <div className='flex items-center space-x-1 md:ml-0 lg:ml-5 mt-3'>
                                       <div className='h-[8px] w-[8px] bg-[#791212]'></div><Link className='text-[16px] font-Custom'>SPORTS</Link>  
                                   </div>
 
-                                  <Link><img src={Sports.imgSrc} className='w-[98%] md:w-[98%]  md:ml-0 mt-5 lg:w-[95%] lg:ml-7'/></Link>
+                                  <Link><img src={Sports.imgSrc} className='w-[98%] md:w-[98%]  md:ml-0 mt-5 h-[300px] lg:w-[80%] lg:ml-7'/></Link>
 
                                   <Link className='font-Custom font-bold md:text-2xl lg:text-3xl text-[#1B1C1D] hover:text-PrimaryColor'><p className=' md:ml-0 lg:ml-7 mt-4 '>{Sports.topicSubHeading}</p></Link>
 
@@ -99,7 +99,7 @@ function GeneralThirdComponent() {
                                        {/* Sports Advert SideDiv */}
                         <div>
                                           {/* Advert SideDiv 1 */}
-                             <div className='h-[200px] flex justify-center'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
+                             <div className='h-[200px] hidden  md:flex justify-center'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
                                                
                                         {/* Advert SideDiv  */}
                              <div className='h-[200px] justify-center hidden md:flex lg:mt-[50px] md:mt-3'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} alt="" /></a></div>

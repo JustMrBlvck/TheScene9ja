@@ -13,7 +13,7 @@ function GeneralComponent() {
             <GeneralSecondComponent/>
             <GeneralThirdComponent/>
             <GeneralFourthComponent/>
-            <GeneralSixthComponent/>
+            {/* <GeneralSixthComponent/> */}
 
     </div>
   )
