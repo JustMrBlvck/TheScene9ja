@@ -25,7 +25,7 @@ function SportsComponent2() {
         }
     ]
   return (
-    <div className='min-h-[200px] w-full bg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-3 p-[20px] box-border'>
+    <div className='min-h-[200px] w-full dark:text-white bg grid  grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-3 p-[20px] box-border'>
         {subpic.map((subpics,index)=>(
             <div key={index} className='min-h-[200px] '>
                 <article className='min-h-[200px] w-full'>
@@ -33,7 +33,7 @@ function SportsComponent2() {
                 </article>
                 <article className='min-h-[20px] w-full'>
                     <a href="#">
-                    <h1 className='text-start text-[1.3rem] font-Custom dark:text-black font-bold hover:text-PrimaryColor'>{subpics.text}</h1>
+                    <h1 className='text-start text-[1.3rem] font-Custom dark:text-white font-bold hover:text-PrimaryColor'>{subpics.text}</h1>
                     </a>
                 </article>
                 <div>

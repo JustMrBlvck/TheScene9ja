@@ -1,11 +1,13 @@
 import React from 'react'
 import TechnologyFirstComponent from './TechnologyFirstComponent'
+import TechnologySecondComponent from './TechnologySecondComponent'
 
 function TechnologyComponent() {
   return (
     <div>
 
-            <TechnologyFirstComponent/>                  
+            <TechnologyFirstComponent/>
+            <TechnologySecondComponent/>                  
 
     </div>
   )
