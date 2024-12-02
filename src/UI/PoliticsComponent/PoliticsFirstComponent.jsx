@@ -25,7 +25,7 @@ function PoliticsFirstComponent({  politicsHead = [],
             {politicsHead.map((item, index) => (
               <Link key={index} to="#">
                 <div>
-                  <img src={item.img} alt={item.heading} className="w-full h-auto" />
+                  <img src={item.img} alt={item.heading} loading="lazy" className="w-full h-auto" />
                 </div>
                 <div className="flex dark:text-white  gap-2 items-center font-Custom  text-[1rem]">
                   <span>
@@ -51,7 +51,7 @@ function PoliticsFirstComponent({  politicsHead = [],
             {politicsNews.map((news, index) => (
               <Link key={index} to="#">
                 <div>
-                  <img src={news.img} alt={news.heading} width='100%' height='100%' className="w-full h-auto" />
+                  <img src={news.img} alt={news.heading} width='100%' height='100%' loading="lazy" className="w-full h-auto" />
                 </div>
                 <div className="flex dark:text-white  gap-2 items-center font-Custom  text-[1rem]">
                     <span>
@@ -77,7 +77,7 @@ function PoliticsFirstComponent({  politicsHead = [],
               <Link key={index}>
                <div>
                 <div>
-                  <img src={subpolitic.img} alt="" />
+                  <img src={subpolitic.img} loading="lazy" alt="" />
                 </div>
                 <div>
                 <div className="flex dark:text-white g items-center font-Custom  text-[1rem]">
@@ -115,7 +115,7 @@ function PoliticsFirstComponent({  politicsHead = [],
             {politicsMain.map((politicsMainn,index)=>(
               <Link key={index}>
                   <div>
-                    <img src={politicsMainn.img} alt="" />
+                    <img src={politicsMainn.img} loading="lazy" alt="" />
                   </div>
                   <div className="dark:text-white font-Custom hover:text-PrimaryColor font-bold text-[1.2rem] capitalize">
                     <h3>{politicsMainn.about}</h3>

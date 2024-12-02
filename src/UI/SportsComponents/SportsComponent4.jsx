@@ -32,7 +32,7 @@ function SportsComponent4() {
     ]
   return (
     <div>
-        <div className='min-h-[100px] bg-slate-300 w-full p-[20px] mt-[40px]'>
+        <div className='min-h-[100px] bg-slate-300  p-[20px] mt-[40px]'>
             <div>
                 <h1 className='font-Custom font-semibold text-[1.7rem] text-[#00000095]'>Football</h1>
                 <hr className='' />

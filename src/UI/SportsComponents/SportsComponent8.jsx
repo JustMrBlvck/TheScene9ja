@@ -28,7 +28,7 @@ function SportsComponent8() {
     <div>
         <div className='min-h-[200px] w-full p-[20px] bg- box-border'>
              <div>
-                <h1 className='font-Custom font-semibold text-[1.7rem] capitalize text-[#00000095]'>Cycling</h1>
+                <h1 className='font-Custom font-semibold text-[1.7rem] capitalize dark:text-white text-[#00000095]'>Cycling</h1>
                 <hr className='' />
             </div>
 
@@ -40,7 +40,7 @@ function SportsComponent8() {
                         </article>
 
                         <article>
-                            <a href="#">  <h1 className='text-start capitalize text-[1.2rem]  md:text-[1.5em]  text-[#00000095] font-Custom dark:text-black font-medium hover:text-PrimaryColor'>{cyclings.text}</h1></a>
+                            <a href="#">  <h1 className='text-start capitalize text-[1.2rem]  md:text-[1.5em]  text-[#00000095] font-Custom dark:text-white font-medium hover:text-PrimaryColor'>{cyclings.text}</h1></a>
                         </article>
                         <div>
                             <span>{cyclings.time}</span>

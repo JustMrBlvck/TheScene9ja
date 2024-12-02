@@ -27,7 +27,7 @@ function SportsComponent6() {
     <div>
         <div className='min-h-[200px] w-full p-[20px] box-border  mt-10'>
             <div>
-                <h1 className='font-Custom font-semibold text-[1.7rem] capitalize text-[#00000095]'>Boxing</h1>
+                <h1 className='font-Custom font-semibold text-[1.7rem] dark:text-white capitalize text-[#00000095]'>Boxing</h1>
                 <hr className='' />
             </div>
             <div className='min-h-[200px] bg grid grid-cols-1 lg:grid-cols-4  mt-10 gap-4'>
@@ -38,7 +38,7 @@ function SportsComponent6() {
                         </article>
 
                         <article>
-                            <a href="#">  <h1 className='text-start capitalize text-[1.2rem]  md:text-[1.5em]  text-[#00000095] font-Custom dark:text-black font-medium hover:text-PrimaryColor'>{boxings.text}</h1></a>
+                            <a href="#">  <h1 className='text-start capitalize text-[1.2rem]  md:text-[1.5em]  text-[#00000095] font-Custom dark:text-white font-medium hover:text-PrimaryColor'>{boxings.text}</h1></a>
                         </article>
                         <div>
                             <span>{boxings.time}</span>
