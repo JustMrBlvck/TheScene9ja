@@ -1,11 +1,10 @@
 import React from 'react'
-import EntertainmentFirstComponent from './EntertainmentFirstComponent'
+import EntertainmentData from './EntertainmentData'
 
 function EntertainmentComponent() {
   return (
     <div>
-
-            <EntertainmentFirstComponent/>
+     <EntertainmentData/>
 
     </div>
   )

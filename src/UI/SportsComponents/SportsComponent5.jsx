@@ -33,7 +33,7 @@ function SportsComponent5() {
     <div>
         <div className='min-h-[200px] w-full bg p-[20px] box-border'>
             <div>
-                <h1 className='font-Custom font-semibold text-[1.7rem] text-[#00000095]'>Tennis</h1>
+                <h1 className='font-Custom font-semibold text-[1.7rem] text-[#00000095] dark:text-white'>Tennis</h1>
                 <hr className='' />
             </div>
             <div className=' min-h-[200px] bg- grid grid-cols-1 lg:grid-cols-2  mt-10 gap-4'>
@@ -44,7 +44,7 @@ function SportsComponent5() {
                         </article>
 
                         <article>
-                            <a href="#">  <h1 className='text-start text-[1.5rem] capitalize  md:text-[1.9em]  text-[#00000095] font-Custom dark:text-black font-medium hover:text-PrimaryColor'>{tenniss.text}</h1></a>
+                            <a href="#">  <h1 className='text-start text-[1.5rem] capitalize  md:text-[1.9em]  text-[#00000095] font-Custom dark:text-white font-medium hover:text-PrimaryColor'>{tenniss.text}</h1></a>
                         </article>
                     </div>
                     
@@ -64,7 +64,7 @@ function SportsComponent5() {
                         </article>
 
                         <article>
-                            <a href="#">  <h1 className='text-start capitalize text-[1.2rem]  md:text-[1.5em]  text-[#00000095] font-Custom dark:text-black font-medium hover:text-PrimaryColor'>{subtennisdisplays.text}</h1></a>
+                            <a href="#">  <h1 className='text-start capitalize text-[1.2rem]  md:text-[1.5em]  text-[#00000095] font-Custom dark:text-white font-medium hover:text-PrimaryColor'>{subtennisdisplays.text}</h1></a>
                         </article>
                     </div>
                     

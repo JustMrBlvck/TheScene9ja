@@ -12,7 +12,7 @@ import SportsComponent8 from './SportsComponent8'
 
 function SportsComponent() {
   return (
-    <div className=''  >
+    <div className='dark:text-white flex items-center flex-col'  >
           <SportsComponent1/>
           <SportsComponent2/>
           <SportsAdvert1/>
