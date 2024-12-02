@@ -12,8 +12,8 @@ function GeneralComponent() {
             <GeneralFirstComponent/>
             <GeneralSecondComponent/>
             <GeneralThirdComponent/>
-            {/* <GeneralFourthComponent/> */}
-            {/* <GeneralSixthComponent/> */}
+            <GeneralFourthComponent/>
+            <GeneralSixthComponent/>
 
     </div>
   )

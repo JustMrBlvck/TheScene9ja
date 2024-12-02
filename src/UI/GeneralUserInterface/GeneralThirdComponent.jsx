@@ -85,32 +85,34 @@ function GeneralThirdComponent() {
                 </div>   
 
 
-                  <div className='min-h-[450px] p-3 gap-4 mt-20 grid grid-cols-1 md:grid md:grid-cols-[73%,27%]'>  
-                         <div className='space-y-4  bg-[#EAF6FC] '>
+                  <div className='min-h-[400px]  gap-4  mt-20 grid grid-cols-1 md:grid md:grid-cols-[73%,27%]'>  
+                         <div className='space-y-4  bg-[#EAF6FC]'>
                             {sportsHeading.map((sportsHeadingS, index)=>(
-                                  <div key={index} className='flex items-center border-b-[3px] border-PrimaryColor space-x-5'>
-                                      <img src={sportsHeadingS.imgSrc} className='h-[170px] w-[170px] bg-[green]'/>
+                                  <div key={index} className='space-y-10 items-center flex flex-col md:flex md:items-center md:flex-row lg:flex lg:items-center lg:flex-row border-b-[3px] border-PrimaryColor md:space-x-5'>
+                                      <img src={sportsHeadingS.imgSrc} className='md:h-[170px] md:w-[170px] bg-[green]'/>
 
-                                      <Link className='font-Custom font-bold hover:text-PrimaryColor text-[20px]'>{sportsHeadingS.heading}</Link>
+                                      <Link className='font-Custom font-bold hover:text-PrimaryColor md:text-[18px] lg:text-[20px]'>{sportsHeadingS.heading}</Link>
                                   </div>
                               ))}  
                          </div>
 
                                        {/* Sports Advert SideDiv */}
-                        <div className=''>
+                        <div>
                                           {/* Advert SideDiv 1 */}
-                             <div className='h-[200px] '><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
+                             <div className='h-[200px] flex justify-center'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
                                                
                                         {/* Advert SideDiv  */}
-                             <div className='h-[200px] mt-10'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} alt="" /></a></div>
+                             <div className='h-[200px] justify-center hidden md:flex lg:mt-[50px] md:mt-3'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} alt="" /></a></div>
 
-                             <div className='mt-20'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/04/Explore-Digital-Bill-1.jpg?fit=2560%2C512&ssl=1"} /></a></div>
+                             <div className='mt-20 md:hidden lg:block'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/04/Explore-Digital-Bill-1.jpg?fit=2560%2C512&ssl=1"} loading='lazy'/></a></div>
+
+                             {/* <div className=' w-[260px] hidden'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png"} /></a></div> */}
                         </div>   
                   </div>
 
 
                                       {/* Advert Box */}
-                  <div className='h-[200px] w-full md:hidden bg-[#F6F6F6] lg:flex items-center justify-center mt-10'> 
+                  <div className='md:h-[200px] w-full hidden bg-[#F6F6F6] lg:flex items-center justify-center mt-10'> 
                         <img src={"https://www.lindaikejisblog.com/advertss/1731844933.gif"} />
                   </div>
                             

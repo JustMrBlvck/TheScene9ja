@@ -19,21 +19,21 @@ function GeneralFourthComponent() {
   return (
     <div className='flex flex-col items-center'>
 
-            <div className='w-9/12 mt-20'>
+            <div className='w-[95%] lg:w-9/12 mt-16'>
                   <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Entertainment</h1>
 
-               <div className='min-h-[650px] mt-2 border-t-[.2px] border-[#8080802f] gap-7  grid grid-cols-[75%,25%]'>
-                     <div className='bg-[#EAF6FC] flex justify-center mt-5 border-t-[3px] border-PrimaryColor'>
-                         <div className=''>      
-                                <div className='flex items-center space-x-1  ml-5 mt-3'>
+               <div className='min-h-[650px] mt-2 border-t-[.2px] border-[#8080802f] gap-7 grid grid-cols-1 lg:grid lg:grid-cols-[75%,25%]'>
+                     <div className='bg-[#EAF6FC] lg:flex lg:justify-center mt-5 border-t-[3px] border-PrimaryColor'>
+                         <div>      
+                                <div className='flex items-center space-x-1 ml-3 lg:ml-5 mt-3'>
                                     <div className='h-[8px] w-[8px] bg-[#791212]'></div><Link className='text-[16px] font-Custom'>ENTERTAINMENT</Link>  
                                 </div>
 
-                                <Link><img src={indexEntertainment.imgSrc} className='mt-5 ml-7'/></Link>
+                                <Link><img src={indexEntertainment.imgSrc} className='md:w-full mt-5 lg:ml-7'/></Link>
 
-                                <Link className='font-Custom font-bold text-3xl text-[#1B1C1D] hover:text-PrimaryColor'><p className='ml-7 mt-4'>{indexEntertainment.topicSubHeading}</p></Link>
+                                <Link className='font-Custom font-bold text-2xl md:text-3xl text-[#1B1C1D] hover:text-PrimaryColor'><p className='md:ml-3 lg:ml-7 mt-4'>{indexEntertainment.topicSubHeading}</p></Link>
 
-                                <p className='font-Custom font-medium ml-7 mt-2 w-[380px] text-PrimaryColor'>{indexEntertainment.topic}</p>
+                                <p className='font-Custom font-medium md:ml-3 mt-2 md:w-[450px] lg:w-[380px]  lg:ml-7  text-PrimaryColor'>{indexEntertainment.topic}</p>
 
                                 <div className='flex items-center space-x-1  ml-5 mt-3 font-Custom font-bold text-[#004081]'>
                                     <div className='h-[8px] w-[8px] bg-[#791212]'></div><p className='text-[16px] font-Custom'>{indexEntertainment.poster}</p>  
@@ -45,14 +45,14 @@ function GeneralFourthComponent() {
                      <div className='mt-5 border-t-[3px] border-PrimaryColor'>
                          <div className='bg-[#EAF6FC]'>
                              <Link>
-                                    <img src={entertainmentLeftDiv.imgSrc}/>
+                                    <img src={entertainmentLeftDiv.imgSrc} className='w-full'/>
                              </Link>
 
                              <div className='p-3'>
                                  <Link className='font-Custom font-bold text-[20px] text-[#1B1C1D] hover:text-PrimaryColor'>{entertainmentLeftDiv.topic}</Link>
                              </div>
 
-                             <p className='mt-2 p-1 w-5/3 text-[16px] font-Custom'>
+                             <p className='mt-2 p-1 w-5/3 text-[20px] md:text-[20px] lg:text-[16px] font-Custom'>
                                   {entertainmentLeftDiv.headLine}
                              </p>
 
@@ -62,7 +62,7 @@ function GeneralFourthComponent() {
                              </div>  
 
                             
-                             <div><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/04/Explore-Digital-Bill-1.jpg?fit=2560%2C512&ssl=1"} /></a></div>
+                             <div><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/04/Explore-Digital-Bill-1.jpg"} /></a></div>
                          </div>
                      </div>
                </div>

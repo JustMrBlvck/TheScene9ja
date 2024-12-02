@@ -34,11 +34,11 @@ function GeneralSixthComponent() {
   return (
     <div className='flex flex-col items-center'>
         
-            <div className='w-9/12 mt-20'>
+            <div className='w-[95%] lg:w-9/12 mt-20'>
                         <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Technology</h1>
 
-                <div className='min-h-[400px] gap-4 mt-3 grid border-t-[.2px] border-[#8080802f] grid-cols-[73%,27%]'>  
-                         <div className='space-y-4 mt-8'>
+                <div className='min-h-[400px] gap-4 mt-3 grid border-t-[.2px] border-[#8080802f] md:grid md:grid-cols-[73%,27%]'>  
+                         <div className='space-y-4 bg-[#EAF6FC] mt-8'>
                             {technologyArray.map((techArray, index)=>(
                                   <div key={index} className='flex items-center border-b-[3px] border-PrimaryColor space-x-5'>
                                       <img src={techArray.imgSrc} className='h-[170px] w-[170px] bg-[green]'/>
@@ -49,14 +49,15 @@ function GeneralSixthComponent() {
                          </div>
 
                                        {/* Sports Advert SideDiv */}
-                        <div className='mt-8'>
-                                         
+                        <div className='mt-8'>                                
                             
-                   {/* Advert SideDiv 1 */} <div className=' w-[260px] '><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png"} /></a></div>
+                   {/* Advert SideDiv 1 */} <div className=' hidden md:block lg:w-[260px] '><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png"} /></a></div>
 
-                    {/* Advert SideDiv 2 */}<div className='h-[200px] w-[260px] mt-6'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
+                    {/* Advert SideDiv 2 */}<div className='h-[200px] hidden md:block lg:w-[260px] mt-[50px]'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
                                                       
-                    {/* Advert SideDiv 3*/}<div className='h-[200px] w-[260px] mt-10'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} alt="" /></a></div>
+                    {/* Advert SideDiv 3*/}<div className='h-[200px] hidden md:block lg:w-[260px] lg:hidden '><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} /></a></div>
+
+                    {/* Advert SideDiv 4*/}  <div className='h-[200px] hidden md:block lg:w-[260px]  lg:mt-[50px]'><a href=""><img src={"https://dsp-media.eskimi.com/upload/143359_2630718223_8099b1eaab7f642f8dc623bf6974a269.gif"} /></a></div>
 
                         </div>   
                   </div>
