@@ -138,8 +138,8 @@ function GeneralFirstComponent() {
             <div className='w-[90%] lg:w-9/12 mt-14 hidden lg:block'>
                   <h1 className='font-Custom text-PrimaryColor text-3xl font-bold'>Top Stories</h1>
 
-                     <div className="min-h-[50px] mt-7 grid grid-cols-[65%,35%] space-x-4 border-[#8080802f] border-t-[.2px] border-b-[.2px]">
-                          <div className='mt-5 h-[400px]'>
+                     <div className="min-h-[500px] mt-7 grid grid-cols-[65%,35%] space-x-4 border-[#8080802f] border-t-[.2px]  border-b-[.2px]">
+                          <div className='mt-5'>
                                <Link >
                                    <img src={TopStories.ImageSrc}/>
                                </Link>

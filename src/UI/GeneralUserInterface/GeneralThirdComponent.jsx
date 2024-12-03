@@ -85,7 +85,7 @@ function GeneralThirdComponent() {
                 </div>   
 
 
-                  <div className='min-h-[400px]  gap-4  mt-20 grid grid-cols-1 md:grid md:grid-cols-[73%,27%]'>  
+                  <div className='gap-4  mt-20 grid grid-cols-1 md:grid md:grid-cols-[73%,27%]'>  
                          <div className='space-y-4  bg-[#EAF6FC]'>
                             {sportsHeading.map((sportsHeadingS, index)=>(
                                   <div key={index} className='space-y-10 items-center flex flex-col md:flex md:items-center md:flex-row lg:flex lg:items-center lg:flex-row border-b-[3px] border-PrimaryColor md:space-x-5'>
@@ -99,14 +99,15 @@ function GeneralThirdComponent() {
                                        {/* Sports Advert SideDiv */}
                         <div>
                                           {/* Advert SideDiv 1 */}
-                             <div className='h-[200px] hidden  md:flex justify-center'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
+                             <div className='h-[200px] lg:w-[240px] hidden md:flex justify-center'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
                                                
                                         {/* Advert SideDiv  */}
-                             <div className='h-[200px] justify-center hidden md:flex lg:mt-[50px] md:mt-3'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} alt="" /></a></div>
+                             <div className='h-[200px] lg:w-[240px] justify-center hidden md:flex md:mt-3 lg:mt-7'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} alt="" /></a></div>
 
-                             <div className='mt-20 md:hidden lg:block'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/04/Explore-Digital-Bill-1.jpg?fit=2560%2C512&ssl=1"} loading='lazy'/></a></div>
+                             <div className='lg:w-[240px] md:hidden lg:mt-8 lg:block'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/04/Explore-Digital-Bill-1.jpg"} loading='lazy'/></a></div>
 
-                             {/* <div className=' w-[260px] hidden'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png"} /></a></div> */}
+                             {/* <div className='h-[200px] w-full justify-center hidden md:flex lg:mt-[50px] md:mt-3'><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg"} alt="" /></a></div> */}
+
                         </div>   
                   </div>
 

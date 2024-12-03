@@ -51,7 +51,7 @@ function GeneralSixthComponent() {
                                        {/* Sports Advert SideDiv */}
                         <div className='mt-8'>                                
                             
-                   {/* Advert SideDiv 1 */} <div className=' hidden md:block lg:w-[260px] '><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png"} /></a></div>
+                   {/* Advert SideDiv 1 */} <div className=' hidden   md:block lg:w-[260px] '><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png"} /></a></div>
 
                     {/* Advert SideDiv 2 */}<div className='h-[200px] hidden md:block lg:w-[260px] mt-[50px]'><a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif"}/></a></div>
                                                       
