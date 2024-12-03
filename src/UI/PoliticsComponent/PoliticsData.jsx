@@ -11,6 +11,7 @@ function PoliticsData() {
       about:
         "He directed the indefinite suspension of the Commissioner for Housing and Urban Development, Engineer Francis Ori, and a three-month suspension for his counterpart Dr. Moses Ekuma, Commissioner for Health and Social Development.",
     },
+    
   ];
 
   const politicsNews = [

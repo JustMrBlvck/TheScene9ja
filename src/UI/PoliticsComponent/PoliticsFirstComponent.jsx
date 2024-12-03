@@ -80,7 +80,7 @@ function PoliticsFirstComponent({  politicsHead = [],
                   <img src={subpolitic.img} loading="lazy" alt="" />
                 </div>
                 <div>
-                <div className="flex dark:text-white g items-center font-Custom  text-[1rem]">
+                <div className="flex dark:text-white  items-center font-Custom  text-[1rem]">
                     <span>
                       <h1 className="before:w-[10px] flex relative items-center gap-2 before:h-[10px] before:bg-red-500   ">
                       {subpolitic.time} |
