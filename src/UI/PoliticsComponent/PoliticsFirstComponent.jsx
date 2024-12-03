@@ -19,7 +19,7 @@ function PoliticsFirstComponent({  politicsHead = [],
           <hr className="font-bold border-black border-[1px]" />
         </div>
 
-        <div className="min-h-[100px] bg w-full md:w-[97%] lg:w-[90%] border-b-[1px] border-b-black dark:border-b-[white]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="min-h-[100px] bg w-full md:w-[97%] lg:w-[90%] border-b-[1px] border-b-black dark:border-b-[white]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Headline Section */}
           <div className="lg:col-span-2">
             {politicsHead.map((item, index) => (
@@ -47,7 +47,7 @@ function PoliticsFirstComponent({  politicsHead = [],
           </div>
 
           {/* News Items Section */}
-          <div className="grid grid-cols-1  gap-1 md:grid-cols-1 lg:grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:col-span-2 gap-3">
             {politicsNews.map((news, index) => (
               <Link key={index} to="#">
                 <div>
@@ -72,7 +72,7 @@ function PoliticsFirstComponent({  politicsHead = [],
             ))}
 
           </div>
-          <div className="flex md:col-span-2 lg:justify-end  flex-col md:grid md:grid-cols-2 lg:mt-[-200px]  w-full lg:w-[50%] lg:ml-[101%]  gap-2 ">
+          <div className="flex md:col-span-2 lg:justify-end  flex-col md:grid md:grid-cols-2 lg:mt-[-200px]   w-full lg:w-[5] lg:ml-[101%]  gap-2 ">
             {subpolitics.map((subpolitic,index)=>(
               <Link key={index}>
                <div>
