@@ -20,8 +20,8 @@ function EntertainmentFirstComponent({
   return (
     <div >
       <div className='min-h-[100px] dark:text-white flex items-center flex-col'>
-       <div className="min-h-[100px] bg-[yellow] w-full md:w-[97%] lg:w-[90%]">
-          <h1>place an advert here</h1>
+       <div className="min-h-[100px]  w-full md:w-[97%] lg:w-[90%]">
+          <a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/04/Explore-Digital-Bill-1.jpg"} /></a>
         </div>
         <div className="w-full md:w-[97%] lg:w-[90%] text-[1.2rem]  min-h-[50px] items-center grid font-Custom capitalize font-bold">
           <h1>entertainment</h1>
