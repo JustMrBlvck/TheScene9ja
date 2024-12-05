@@ -8,8 +8,9 @@ function PoliticsFirstComponent({  politicsHead = [],
   totalPages,
   currentPage,
   paginate, }) {
+    
   return (
-    <div className="">
+    <div>
       <div className="min-h-[100px] bg flex flex-col items-center">
         <div className="min-h-[100px] bg-[yellow] w-full md:w-[97%] lg:w-[90%]">
           <h1>place an advert here</h1>

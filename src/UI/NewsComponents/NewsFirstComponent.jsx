@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom'
 import RecentMugshots from '../Collections/RecentMugshots.jpg'
 
 function NewsFirstComponent() {
+ 
+   const Newsheading = {
+     img: "https://theshaderoom.com/wp-content/uploads/2024/12/President-Joe-Biden-Pardons-Son-Hunter-Delaware-California-Convictions-scaled-e1733161923861.jpg",
+     topic:"Free His Boy! What Happens Now That President Biden Pardoned His Son Hunter?"
+   }
+
     const newsHeader = [
         {
             id: 1,
@@ -27,46 +33,38 @@ function NewsFirstComponent() {
     ]
 
   return (
-    <div>
- 
-          <div className='min-h-[72vh] bg-[#F4EEF2] mt-10 md:min-h-[35vh] md:flex md:items-center md:justify-center lg:min-h-[100vh] lg:flex lg:items-center lg:justify-center'>
-              <div className='min-h-[280px] bg-[green] w-full grid grid-cols-1 md:h-[250px] md:grid md:grid-cols-[60%,40%] md:mx-14 lg:h-[500px] lg:grid lg:grid-cols-[65%,35] lg:mx-28'>
+    <div className='bg-[#F4EEF2] lg:mt-10 flex flex-col items-center'>
+            
+        <div className='w-[90%] lg:w-9/12 '>
+          <div className='mt-10'>
+              <div className='min-h-[280px] w-full grid grid-cols-1 md:h-[250px] md:grid md:grid-cols-[60%,40%] lg:grid lg:grid-cols-[60%,40%]'>
                   <Link className='flex justify-end'>
-                       <img src={RecentMugshots}/>
+                       <img src={Newsheading.img}/>
                   </Link>
                   
-                  <div className='bg-[white] flex justify-center items-center'>
-                      <a href="" className='font-Custom font-bold text-center text-[25px] hover:text-PrimaryColor md:text-[20px] lg:text-3xl lg:leading-[50px]'>
-                           Recent Mugshot Of <br />
-                           Erik & Lyle <br />
-                           Menendez Surface <br />
-                           Following Los <br />
-                           Angeles DA's <br />
-                           Recommendation <br />
-                           To Resentence The <br />
-                           Brothers
-                      </a>
+                  <div className='flex bg-[white] items-center justify-center mt-4 lg:mt-0 lg:mx-2'>
+                      <Link className='font-Custom text-center font-bold text-[25px] hover:text-PrimaryColor md:text-[20px] lg:text-3xl lg:leading-[40px]'>{Newsheading.topic}</Link>
                   </div>
               </div>
           </div>
 
 
-        <div className=" min-h-[30px] bg-[#F4EEF2] lg:flex lg:justify-center md:mx-14 lg:mx-28">
-            <div className='min-h-[300px] bg-[] grid grid-cols-1 md:grid md:grid-cols-2 md:gap-8 lg:grid lg:grid-cols-4 lg:gap-8'>
+        <div className="mt-[40px] lg:mt-[130px] lg:flex lg:justify-center">
+            <div className='grid grid-cols-1 md:grid md:grid-cols-2 md:gap-8 lg:grid lg:grid-cols-4 lg:gap-8'>
                     {newsHeader.map((News, index)=>(
-                          <Link key={index} className='h-[410px] bg-[] grid grid-rows-2 md:h-[340px]'>
-                          <div className='bg-[]'>
+                          <Link key={index} className='grid grid-rows-[65%,35%] lg:grid lg:grid-rows-2'>
+                          <div className='h-fit'>
                             <img src={News.Image} className='object-cover'/>
                           </div>
 
-                          <Link className='bg-[] text-[20px] text-center flex items-center  md:justify-center md:items-end text-[#1A1B1D]  font-bold lg:mt-[-10px] lg:flex lg:justify-center lg:items-start'>
-                              <h1 className='font-Custom mt-7 mx-3 md:mt-[20px] hover:text-PrimaryColor lg:text-[18px]'>{News.Headline}</h1>
+                          <Link className='text-[20px] text-center flex items-center text-[#1A1B1D]  font-bold lg:mt-[-10px] lg:flex lg:justify-center lg:items-start'>
+                              <h1 className='font-Custom mt-7 md:mt-[20px] hover:text-PrimaryColor lg:text-[18px]'>{News.Headline}</h1>
                           </Link>
                       </Link>
                     ))}
              </div>
         </div>
- 
+     </div>
     </div>
   )
 }

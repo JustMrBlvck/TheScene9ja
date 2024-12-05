@@ -49,11 +49,11 @@ function Header() {
 
                 <div className='bg-[#1A1B1D] grid grid-cols-[25%,50%,25%]'>
                      <div className='bg-[] flex justify-center items-center'>
-                         <Link className='text-PrimaryColor text-4xl '><GiTreeRoots /></Link>
+                         <Link to='/' className='text-PrimaryColor text-4xl t'><GiTreeRoots /></Link>
                      </div>
 
                      <div className='flex justify-center items-center text-PrimaryColor font-Custom font-bold text-4xl'>
-                          <h1>The Scene 9ja</h1>
+                          <Link to='/'>The Scene 9ja</Link>
                      </div>
 
                      <div className='text-PrimaryColor flex justify-center items-center gap-3'>     
@@ -88,7 +88,7 @@ function Header() {
              </div>
 
              <div className='flex justify-center items-center text-PrimaryColor font-Custom font-bold text-2xl'>
-                 <h1>The Scene 9ja</h1>
+                 <Link to='/'>The Scene 9ja</Link>
              </div>
 
              <div className='text-white flex items-center justify-center gap-3'>

@@ -6,7 +6,7 @@ function NewsComponent() {
   return (
     <div>
           <NewsFirstComponent/>
-          {/* <NewsSecondComponent/> */}
+          <NewsSecondComponent/>
     </div>
   )
 }

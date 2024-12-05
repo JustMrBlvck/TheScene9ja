@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function GeneralSixthComponent() {
+function GeneralFifthComponent() {
      const technology = {
         imgSrc: "https://www.channelstv.com/wp-content/uploads/2021/05/Amazon-HQ-2.jpg",
         headLine:"Amazon Invests Another $4bn In AI Firm Anthropic"
@@ -69,4 +69,4 @@ function GeneralSixthComponent() {
   )
 }
 
-export default GeneralSixthComponent
+export default GeneralFifthComponent

@@ -3,7 +3,7 @@ import GeneralFirstComponent from './GeneralFirstComponent'
 import GeneralSecondComponent from './GeneralSecondComponent'
 import GeneralThirdComponent from './GeneralThirdComponent'
 import GeneralFourthComponent from './GeneralFourthComponent'
-import GeneralSixthComponent from './GeneralSixthComponent'
+import GeneralFifthComponent from './GeneralSFifthComponent'
 
 function GeneralComponent() {
   return (
@@ -13,7 +13,7 @@ function GeneralComponent() {
             <GeneralSecondComponent/>
             <GeneralThirdComponent/>
             <GeneralFourthComponent/>
-            <GeneralSixthComponent/>
+            <GeneralFifthComponent/>
 
     </div>
   )

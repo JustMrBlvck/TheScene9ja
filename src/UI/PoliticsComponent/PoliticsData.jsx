@@ -58,7 +58,7 @@ function PoliticsData() {
       },
   ]
 
-  const politicsMain=[
+  const politicsMain = [
     {
         img:'https://www.channelstv.com/wp-content/uploads/2023/07/Remi-Tinubu.jpg',
         about:'Oluremi Tinubu Joins 16 Days of Activism Against Gender-Based Violence'
