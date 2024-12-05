@@ -28,7 +28,7 @@ function EntertainmentFirstComponent({
           <hr className="font-bold border-black border-[1px]" />
         </div>
 
-        <div className='min-h-[100px] bg w-full md:w-[97%] lg:w-[90%] border-b-[1px] border-b-black dark:border-b-[white]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+        <div className='min-h-[100px] bg w-full md:w-[97%] lg:w-[90%] border-b-[1px] border-b-black dark:border-b-[white]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
           <div className='lg:col-span-2'>
             {headEntertainment.map((item,index)=>(
               <Link key={index}>
@@ -54,7 +54,7 @@ function EntertainmentFirstComponent({
              
             ))}
           </div>
-          <div className='b grid grid-cols-1 md:grid-cols-1 gap-3 lg:grid-cols-2'>
+          <div className='b lg:col-span-2 grid grid-cols-1 md:grid-cols-1 gap-3 lg:grid-cols-2'>
             {subEntertainment.map((item,index)=>(
               <Link key={index}>
                 <div>
@@ -76,7 +76,7 @@ function EntertainmentFirstComponent({
             ))}
 
           </div>
-          <div className='flex md:col-span-2 lg:justify-end  flex-col md:grid md:grid-cols-2 lg:mt-[-200px]  w-full lg:w-[50%] lg:ml-[101%]  gap-2 '>
+          <div className='flex md:col-span-2 lg:justify-end  flex-col md:grid md:grid-cols-2 lg:mt-[-200px]  w-full lg:w-[9] lg:ml-[104%] lg:gap-4  gap-2 '>
             {asideEntertainment.map((items,index)=>(
              <Link key={index}>
                <div>
