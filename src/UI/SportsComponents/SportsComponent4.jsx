@@ -45,7 +45,7 @@ function SportsComponent4() {
                         </article>
 
                         <article>
-                            <a href="#">  <h1 className='text-start text-[1.5rem]  md:text-[1.9em]  text-[#00000095] font-Custom dark:text-black font-medium hover:text-PrimaryColor'>{footballdisplays.text}</h1></a>
+                            <a href="#">  <h1 className='text-start text-[1.5rem]  md:text-[1.6em]  text-[#00000095] font-Custom dark:text-black font-medium hover:text-PrimaryColor'>{footballdisplays.text}</h1></a>
                         </article>
                     </div>
                     
