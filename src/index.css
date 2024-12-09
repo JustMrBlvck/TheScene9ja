@@ -2,3 +2,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+  
+  .tech-box1 {
+    transition: margin-left 0.3s ease-in-out; 
+  }
+  
+  .tech-container1:hover .tech-box1 {
+    margin-left: -50px;
+  }
+
+  .tech-box2 {
+    transition: margin-left 0.3s ease-in-out; 
+  }
+  
+  .tech-container2:hover .tech-box2 {
+    margin-left: -10px;
+  }
+  
+
+  .tech-box3 {
+    transition: margin-left 0.3s ease-in-out; 
+  }
+  
+  .tech-container3:hover .tech-box3 {
+    margin-left: -90px;
+  }
+
+  /* img{
+    height: 90%;
+    width: 100%;
+  } */

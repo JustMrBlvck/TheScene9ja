@@ -5,10 +5,8 @@ import NewsSecondComponent from './NewsSecondComponent'
 function NewsComponent() {
   return (
     <div>
-
           <NewsFirstComponent/>
           <NewsSecondComponent/>
-
     </div>
   )
 }
