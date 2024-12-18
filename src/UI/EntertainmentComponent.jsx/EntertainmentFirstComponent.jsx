@@ -1,145 +1,158 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function EntertainmentFirstComponent({
-  headEntertainment=[], 
-  subEntertainment=[],
-  asideEntertainment=[],
+function EntertainmentFirstComponent({ 
+  asideEntertainment=[], 
   mainEntertainment=[],
   paginate,
   currentPage,
   totalPages
 }) {
 
-            {/* CREATING AN OBJECT FOR ADVERT JUST FOR AN EASY ACCESS HERE  */}
-  const advertBox = {
-    AD: "https://dsp-media.eskimi.com/upload/142402_2123234271_0bd86081fa39063dcaeca9893dde821d.jpg",
-   ADd: "https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png"
- }
- 
+  const entertainment = {
+     time:"2h",
+     author:" Nebianet Usaini",
+     imgSrc: "https://www.channelstv.com/wp-content/uploads/2024/12/Funke_Akindele.jpg",
+     heading:"You Will Be Arrested If You Pirate My New Movie, Akindele Warns Pirates",
+     subHeading:"The movie will be released in cinemas on Friday, December 13."
+  }
+
+  const entertainmentRight=[
+    {
+        id:0,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/12/AFP__20241211__36Q483M__v1__Preview__FilesBritainUsLiteratureFilmAward.jpg',
+        time:"1d",
+        author:'Khadijat Lawal',
+        heading:"Actress Sarah Parker Joins Booker Prize 2025 Jury"
+    },
+    {    id:1,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/12/AFP__20241209__36PY9MB__v2__Preview__82ndGoldenGlobeAwardsNominationsAnnouncement.jpg',
+        time:"3d",
+        author:"Khadijat lawal",
+        heading:"‘Emilia Perez’ Tops Golden Globes Nominations",
+    },
+    {   
+        id:2,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/Michael-Jackson__RetiredCopFindsTroveOfUnreleasedJacksonSongs-1.jpg",
+        time:'6h',
+        author:"Nebianet Usaini",
+        heading:"Retired Cop Finds Trove Of Unreleased Michael Jackson Songs"
+    },
+    {   
+        id:3,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241125__36N89F2__v1__Preview__OpeningNightOfLaCageAuxFolles.jpg',
+        time:'3d',
+        heading:"Bestselling ‘Woman Of Substance’ Author Barbara Taylor Bradford Dies At 91",
+        author:'Khadijat lawal'
+    }
+]
   return (
-    <div >
-      <div className='min-h-[100px] dark:text-white flex items-center flex-col'>
-       <div className="min-h-[100px]  w-full md:w-[97%] lg:w-[90%]">
-          <a href=""><img src={"https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/04/Explore-Digital-Bill-1.jpg"} /></a>
-        </div>
-        <div className="w-full md:w-[97%] lg:w-[90%] text-[1.2rem]  min-h-[50px] items-center grid font-Custom capitalize font-bold">
-          <h1>entertainment</h1>
-          <hr className="font-bold border-black border-[1px]" />
-        </div>
+      <div className='bg-white flex flex-col items-center dark:text-white'>
 
-        <div className='min-h-[100px] bg w-full md:w-[97%] lg:w-[90%] border-b-[1px] border-b-black dark:border-b-[white]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-          <div className='lg:col-span-2'>
-            {headEntertainment.map((item,index)=>(
-              <Link key={index}>
-                <div>
-                  <img src={item.img} loading='lazy' height='100%' width='100%' alt={item.heading} />
-                </div>
-                <div className='flex gap-1 items-center'>
-                  <h1 className='before:w-[10px] before:h-[10px] flex relative items-center before:bg-[red]'>{item.time} |</h1>
-                  <h1 className='text-[1.1rem] font-Custom font-bold'>{item.author}</h1>
-                </div>
-                <div>
-                  <article className='leading-8'>
-                    <h2 className='text-[1.3rem] font-Custom font-bold'>
-                      {item.heading}
-                    </h2>
-                    <p className='font-Custom text-[1rem] font-semibold'>
-                      {item.about}
-                    </p>
-                  </article>
-                </div>
-              
-              </Link>
-             
-            ))}
-          </div>
-          <div className='b lg:col-span-2 grid grid-cols-1 md:grid-cols-1 gap-3 lg:grid-cols-2'>
-            {subEntertainment.map((item,index)=>(
-              <Link key={index}>
-                <div>
-                <img src={item.img} width='100%' height='100%' loading='lazy' alt="" />
-              </div>
-              <div className='flex gap-1 items-center'>
-                  <h1 className='before:w-[10px] before:h-[10px] flex relative items-center before:bg-[red]'>{item.time} |</h1>
-                  <h1 className=' font-Custom font-bold'>{item.author}</h1>
-              </div>
-              <div>
-                <article className='font-Custom font-bold '>
-                  <h3>{item.heading}</h3>
-                </article>
-              </div>
+                 {/* Advert Box */}
+            <Link className='md:h-[130px] w-[90%] lg:w-9/12bg-[#F6F6F6] md:flex items-center justify-center mt-10'> 
+                  <a href=""><img src={"https://www.lindaikejisblog.com/advertss/1731844933.gif"} /></a>
+            </Link>
 
-              
-              </Link>
-              
-            ))}
 
-          </div>
-          <div className='flex md:col-span-2 lg:justify-end  flex-col md:grid md:grid-cols-2 lg:mt-[-200px]  w-full lg:w-[9] lg:ml-[104%] lg:gap-4  gap-2 '>
-            {asideEntertainment.map((items,index)=>(
-             <Link key={index}>
-               <div>
-                <img src={items.img} alt={items.heading} />
-              </div>
-              <div className='flex gap-1 items-center dark:text-white'>
-                  <h1 className='before:w-[10px] before:h-[10px] flex relative items-center before:bg-[red]'>{items.time} |</h1>
-                  <h1 className=' font-Custom font-bold'>{items.author}</h1>
-              </div>
-              <div className='font-Custom font-bold'>
-                <h3>{items.heading}</h3>
-              </div>
-             
-             </Link>
+            <div className='w-[95%] lg:w-[83%] mt-6'>
+                  <h1 className='font-Custom text-PrimaryColor text-2xl lg:text-3xl font-bold'>Entertainment</h1>
 
-            ))}
-          </div>
+                  <div className='min-h-[450px] mt-2 border-t-[.2px] border-[#8080802f] border-b-[.2px] gap-4 grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-[45%,55%]'>
+                      <div className='lg:flex lg:justify-center'>
+                          <Link>
+                              <div className='mt-5'>
+                                  <Link >
+                                      <img src={entertainment.imgSrc}/>
+                                  </Link>
 
-        </div>
-        <div className='min-h-[100px] w-full md:w-[97%] lg:w-[90%]  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[80%,20%] mt-4 gap-2'>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
-              {mainEntertainment.map((item,index)=>(
-                <Link key={index}>
-                  <div>
-                    <img src={item.img} height='100%' width='100%' loading='lazy' alt={item.heading} />
+                                  <div className='w-full flex items-center space-x-1 mt-3  font-Custom'>
+                                          <div className='h-[8px] w-[8px] bg-[#791212]'></div>
+                                          <p className='text-[16px] font-Custom'>{entertainment.time}</p>
+                                          <p>| {entertainment.author}</p>
+                                  </div>
+
+                                  <Link className='font-Custom font-bold text-2xl mt-5 hover:text-PrimaryColor'><p className='mt-3'>{entertainment.heading}</p></Link>
+
+                                  <div><Link className='font-Custom text-PrimaryColor font-medium text-[16px]'>{entertainment.subHeading}</Link></div>  
+                              </div>
+                          </Link> 
+                      </div>
+
+
+                      <div className='border-[#8080802f] border-l-[.2px] gap-3 mt-5 my-5 grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2'> 
+                             {entertainmentRight.map((index)=>(
+                                <div key={index.id} className='flex w-full items-center flex-col space-y-4 lg:ml-4'>
+                                    <div className='w-full'><img src={index.imgSrc} className='lg:w-[260px]'/></div>
+                                    
+                                    <div className='w-full flex items-center space-x-1  font-Custom'>
+                                          <div className='h-[8px] w-[8px] bg-[#791212]'></div>
+                                          <p className='text-[16px] font-Custom'>{index.time}</p>
+                                          <p>| {index.author}</p>
+                                      </div>
+                                    
+                                    <div className=' w-full font-Custom font-bold lg:text-[17px]'><Link>{index.heading}</Link></div> 
+                                </div>
+                            ))}
+                      </div>
                   </div>
-                  <div className='font-Custom font-bold text-[1.2rem]'>
-                    <h3>{item.heading}</h3>
+            </div>
+
+
+                        {/* Advert Box */}
+             <Link className='md:h-[190px] w-[90%] lg:w-[83%]bg-[#F6F6F6] md:flex items-center justify-center mt-10'> 
+                  {/* <a href=""><img src={"https://www.lindaikejisblog.com/advertss/1731844933.gif"} /></a> */}
+            </Link>
+
+
+            <div className='w-[95%] lg:w-[83%] mt-6'>
+
+                  <div className='min-h-[300px] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[70%,30%] mt-4 gap-5 border-t-[.2px] border-[#8080802f] border-b-[.2px]'>
+                        <Link className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3'>
+                              {mainEntertainment.map((mainEntertainment, index)=>(
+                                    <div key={index} className='flex w-full items-center flex-col space-y-4'>
+                                        <div className='w-full'><img src={mainEntertainment.imgSrc} className='lg:w-[260px]'/></div>                                    
+                                        
+                                        <div className=' w-full font-Custom font-bold lg:text-[17px] hover:text-PrimaryColor'><Link>{mainEntertainment.heading}</Link></div> 
+                                    </div>
+                                ))}
+                        </Link>
+
+                        <div className='mt-3'>
+                                                 {/* Advert Box */}
+                           <Link className='w-full  lg:flex lg:flex-col lg:items-center lg:mt-12'>
+                                 <h3 className='font-Custom font-bold text-[gray]'>Advertisement</h3>
+
+                                <div className='flex justify-center'><a href='' className='bg-[#F6F6F6] h-[270px] w-full'><img src={"https://tpc.googlesyndication.com/simgad/5974062208041488507"}/></a></div>
+                           </Link>
+
+                                                   {/* Advert Box */}
+                           <Link className='w-full lg:flex lg:flex-col lg:items-center lg:mt-6'>
+                                 <h3 className='font-Custom font-bold text-[gray]'>Advertisement</h3>
+
+                                <div className='flex justify-center'><a href='' className='bg-[#F6F6F6] h-[270px] w-full'><img src={"https://tpc.googlesyndication.com/simgad/5974062208041488507"}/></a></div>
+                           </Link>
+                        </div>
                   </div>
 
-                </Link>
-              ))}
 
-          </div>
-        {/* <div className='min-h-[100px] bg-yellow-200 w-full lg:hidden '>
-          wsdcfv 
+                  <div className='min-h-[60px] gap-2 flex items-center p-2 border border-[#8080802f] rounded-xl w-full md:w-[96%] lg:w-[17%] mt-16'>
+                        {Array.from({length:totalPages},(_, i)=>(
+                            <button
+                            key={i + 1}
+                            className={`border-none btn ${currentPage === i + 1 ? "btn-active" : ""}`}
+                            onClick={() => paginate(i + 1)}
+                        >
+                            {i + 1}
+                        </button>
+                        ))}
+                 </div>
 
-        </div> */}
-      
-          <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 '>
-              {Object.values(advertBox).map((url, index) => (
-                    <img key={index} src={url} alt={`Advert ${index}`} />
-                  ))}       
-          </div>
-    
-        </div>
-        <div className='min-h-[40px] w-full md:w-[96%] lg:w-[90%]  mt-2'>
-          {Array.from({length:totalPages},(_, i)=>(
-             <button
-             key={i + 1}
-             className={`btn ${currentPage === i + 1 ? "btn-active" : ""}`}
-             onClick={() => paginate(i + 1)}
-           >
-             {i + 1}
-           </button>
-          ))}
-           
 
-        </div>
+            </div>
+
 
       </div>
-      
-    </div>
   )
 }
 

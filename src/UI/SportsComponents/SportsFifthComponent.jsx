@@ -92,7 +92,7 @@ function SportsFifthComponent() {
                                                     {/* SportBoxing */}
         <div className='w-[90%] lg:w-9/12 mt-5'>
                
-              <h1 className='font-Custom text-PrimaryColor text-4xl font-medium'>Boxing</h1>
+             <h1 className='font-Custom text-PrimaryColor text-4xl font-medium'>Boxing</h1>
                    
             <div className='min-h-[250px] grid grid-cols-1 mt-6 md:grid md:grid-cols-2 md:border-t-[.2px] gap-5 font-Custom font-bold md:border-[#8080802f] lg:grid lg:grid-cols-4'>
                   {sportsBoxing.map((sportsBoxing, index)=>(
@@ -112,7 +112,7 @@ function SportsFifthComponent() {
                
             <h1 className='font-Custom text-PrimaryColor text-4xl font-medium'>Golf</h1>
                     
-               <div className='min-h-[300px] grid grid-cols-1 mt-6 md:grid md:grid-cols-2 md:border-t-[.2px] gap-5 font-Custom font-bold md:border-[#8080802f] lg:grid lg:grid-cols-4'>
+               <div className='min-h-[350px] grid grid-cols-1 mt-6 md:grid md:grid-cols-2 md:border-t-[.2px] gap-5 font-Custom font-bold md:border-[#8080802f] lg:grid lg:grid-cols-4'>
                    {sportsGolf.map((sportsGolf, index)=>(
                         <div key={index} className='flex w-full items-center flex-col space-y-4 lg:mt-5'>
                             <div><img src={sportsGolf.imgSrc}/></div>

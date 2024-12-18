@@ -9,18 +9,22 @@ function GeneralFifthComponent() {
 
      const technologyArray = [
         {
+            id:0,
             imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/11/games-nintendo__FilesJapanGamesBusinessNintendo-1.jpg",
             headLine:"Nintendo Courts Non-Gamers In ‘About-Turn’ Strategy"
         },
         {
+            id:1,
             imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241119__36MU2P6__v1__Preview__FilesSkoreaTransportAutomobile.jpg",
             headLine:"Three Auto Workers Dead After Incident At Hyundai Car Factory"
         },
         {
+            id:2,
             imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/10/large-Google-logo-is-seen-at-Googles-Bay-View-campus__FilesUsTechGoogleEarnings.jpg",
             headLine:"US Govt Calls For Breakup Of Google And Chrome"
         },
         {
+            id:3,
             imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/11/gaming.jpg",
             headLine:"Exploring Entertainment Trends In 2024: From Digital Innovations Rise Of Immersive Gaming Experiences"
         }
@@ -34,22 +38,22 @@ function GeneralFifthComponent() {
   return (
     <div className='flex flex-col items-center'>
         
-            <div className='w-[95%] lg:w-9/12 mt-20'>
+            <div className='w-[95%] lg:w-[83%] mt-20'>
                         <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Technology</h1>
 
                 <div className='min-h-[400px] gap-4 mt-3 grid border-t-[.2px] border-[#8080802f] md:grid md:grid-cols-[73%,27%]'>  
                          <div className='space-y-4 bg-[#EAF6FC] mt-8'>
-                            {technologyArray.map((techArray, index)=>(
-                                  <div key={index} className='flex items-center border-b-[3px] border-PrimaryColor space-x-5'>
-                                      <img src={techArray.imgSrc} className='h-[170px] w-[170px] bg-[green]'/>
+                            {technologyArray.map((index)=>(
+                                  <div key={index.id} className='flex items-center border-b-[3px] border-PrimaryColor space-x-5'>
+                                      <img src={index.imgSrc} className='h-[170px] w-[170px] bg-[green]'/>
 
-                                      <Link className='font-Custom font-bold hover:text-PrimaryColor text-[20px]'>{techArray.headLine}</Link>
+                                      <Link className='font-Custom font-bold hover:text-PrimaryColor text-[20px]'>{index.headLine}</Link>
                                   </div>
                               ))}  
                          </div>
 
                                        {/* Sports Advert SideDiv */}
-                        <div className='mt-8'>                                
+                        <div className='mt-8 lg:sticky lg:top-0'>                                
                             
                    {/* Advert SideDiv 1 */} <div className=' hidden   md:block lg:w-[260px] '><a href=""><img src={"https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png"} /></a></div>
 

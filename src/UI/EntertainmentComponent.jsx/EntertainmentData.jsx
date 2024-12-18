@@ -2,52 +2,9 @@ import React, { useState } from 'react'
 import EntertainmentFirstComponent from './EntertainmentFirstComponent'
 
 function EntertainmentData() {
-    const headEntertainment = [
-        {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Omotola-Jalade-Ekehinde.jpg',
-            time:'15h',
-            author:'Emmanuel EgboBiamadu',
-            heading:"‘I Could Not Sit Up,’ Omotola Narrates Ordeal With Life-Threatening Sickness",
-            about:'The 46-year-old said she was rushed to the emergency unit several times during the illness.'
-        },
-        {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Omotola-Jalade-Ekehinde.jpg',
-            time:'15h',
-            author:'Emmanuel EgboBiamadu',
-            heading:"‘I Could Not Sit Up,’ Omotola Narrates Ordeal With Life-Threatening Sickness",
-            about:'The 46-year-old said she was rushed to the emergency unit several times during the illness.'
-        },
-
-    ]
-      
-    const subEntertainment=[
-        {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-26-at-5.17.42-PM.jpeg',
-            time:'3d',
-            author:'Emmanuel  Egbobiamadu',
-            heading:"Nigeria Is The Cultural Capital Of The World – Wanle Akinboboye"
-        },
-        {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241125__36N89F2__v1__Preview__OpeningNightOfLaCageAuxFolles.jpg',
-            time:'3d',
-            heading:"Bestselling ‘Woman Of Substance’ Author Barbara Taylor Bradford Dies At 91",
-            author:'Khadijat lawal'
-        },
-        {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-26-at-5.17.42-PM.jpeg',
-            time:'3d',
-            author:'Emmanuel  Egbobiamadu',
-            heading:"Nigeria Is The Cultural Capital Of The World – Wanle Akinboboye"
-        },
-        {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241125__36N89F2__v1__Preview__OpeningNightOfLaCageAuxFolles.jpg',
-            time:'3d',
-            heading:"Bestselling ‘Woman Of Substance’ Author Barbara Taylor Bradford Dies At 91",
-            author:'Khadijat lawal'
-        }
-    ]
+    
     const asideEntertainment = [
-        {
+        { 
             img:'https://www.channelstv.com/wp-content/uploads/2024/09/EMMYS.jpg',
             time:'3d',
             author:'khadijat lawal',
@@ -75,72 +32,99 @@ function EntertainmentData() {
 
     const mainEntertainment = [
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/phyna-BBNaija-2.jpg',
-            heading:'BBN’s Phyna Sent Out From Restaurant Over Indecent Dressing'
+            id:0,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/12/AFP__20241209__36PY9MB__v2__Preview__82ndGoldenGlobeAwardsNominationsAnnouncement.jpg',
+            heading:"‘Emilia Perez’ Tops Golden Globes Nominations"
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/09/Basketmouth-Victoria-Eze.jpg',
-            heading:'Basketmouth’s First Feature Film ‘A Ghetto Love Story’ To Hit Cinemas Nov 22'
+            id:1,
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/Katsina-protesters.jpg",
+            heading:"Katsina DJ Operators Protest Eight-Month Ban By Hisbah"
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241121__36MU29V__v1__Preview__FilesFranceMediaInternetCinemaBook.jpg',
-            heading:'French YouTuber Takes On Manga After Conquering Everest'
+            id:2,
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/AFP__20241209__36PW8CB__v1__Preview__FilesEntertainmentUsJapanFilmTolkien.jpg",
+            heading:"‘Lord Of The Rings’ Gets Anime Makeover With ‘War Of The Rohirrim’ Film"
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241121__36MY7LA__v1__Preview.jpg',
+            id:3,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241121__36MY7LA__v1__Preview.jpg',
             heading:'Banana Taped To A Wall Sells For $6.2 Million In New York',
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Rust-Movie-Premiere.jpg',
+            id:4,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/Rust-Movie-Premiere.jpg',
             heading:'Alec Baldwin’s ‘Rust’ Premieres Three Years After On-Set Shooting'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Barry-Jenkins-1.jpg',
+            id:5,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/Barry-Jenkins-1.jpg',
             heading:'VIDEO: ‘Mufasa’ Will Be First Experience Of Africa For Some People, Says Director'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241120__36MW8Q8__v1__Preview__PolandUsEntertainmentFilm.jpg',
+            id:5,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241120__36MW8Q8__v1__Preview__PolandUsEntertainmentFilm.jpg',
             heading:'‘Rust’ To premiere At Polish Film Festival Three Years After On-Set Shooting'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Denzel_Washington-1.jpg',
+            id:6,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/Denzel_Washington-1.jpg',
             heading:'Denzel Washington Confirms Two More Equaliser Movies'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Renes-Painting.jpg',
+            id:7,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/Renes-Painting.jpg',
             heading:'Rene Magritte’s Painting Sells For Record $121 Million'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241121__36MU29V__v1__Preview__FilesFranceMediaInternetCinemaBook.jpg',
+            id:8,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241121__36MU29V__v1__Preview__FilesFranceMediaInternetCinemaBook.jpg',
             heading:'French YouTuber Takes On Manga After Conquering Everest'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241121__36MY7LA__v1__Preview.jpg',
-            heading:'Banana Taped To A Wall Sells For $6.2 Million In New York',
+            id:9,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/12/AFP__20241204__36PB87C__v1__Preview__FilesSafricaArtKouoh.jpg',
+            heading:"Cameroon Curator Kouoh Becomes First African Woman To Lead Venice Biennale",
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Rust-Movie-Premiere.jpg',
-            heading:'Alec Baldwin’s ‘Rust’ Premieres Three Years After On-Set Shooting'
+            id:10,
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2020/11/Netflix-Logo.jpg",
+            heading:"We Are Not Exiting Nigeria, Says Netflix"
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Barry-Jenkins-1.jpg',
+            id:11,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/Barry-Jenkins-1.jpg',
             heading:'VIDEO: ‘Mufasa’ Will Be First Experience Of Africa For Some People, Says Director'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241120__36MW8Q8__v1__Preview__PolandUsEntertainmentFilm.jpg',
+            id:12,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/AFP__20241120__36MW8Q8__v1__Preview__PolandUsEntertainmentFilm.jpg',
             heading:'‘Rust’ To premiere At Polish Film Festival Three Years After On-Set Shooting'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Denzel_Washington-1.jpg',
+            id:13,
+            imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/Denzel_Washington-1.jpg',
             heading:'Denzel Washington Confirms Two More Equaliser Movies'
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/Renes-Painting.jpg',
-            heading:'Rene Magritte’s Painting Sells For Record $121 Million'
+            id:14,
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/AFP__20241208__36PU8HK__v1__Preview__FilesUsEntertainmentMusicSwift.jpg",
+            heading:"Taylor Swift Delivers Final Performance In Record-Breaking ‘Eras’ Tour"
         },
         {
-            img:'https://www.channelstv.com/wp-content/uploads/2024/11/phyna-BBNaija-2.jpg',
-            heading:'BBN’s Phyna Sent Out From Restaurant Over Indecent Dressing'
+            id:15,
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/US-rapper-Jay-Z-arrives-for-the-Los-Angeles-Special-Screening-of-Netflixs-The-Harder-They-Fall-300x1-1.jpg",
+            heading:"Jay-Z Accused Of Raping Teen With Diddy In Civil Suit — Court Filing"
+        },
+        {
+            id:16,
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/Kunle-Afolayan.png",
+            heading:"We Need Grants From Govt To Help Movie Industry – Kunle Afolayan"
+        },
+         {
+            id:17,
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/Kunle-Afolayan.png",
+            heading:"We Need Grants From Govt To Help Movie Industry – Kunle Afolayan"
         }
     ]
 
@@ -156,15 +140,14 @@ function EntertainmentData() {
        return array.slice(firstPostIndex, lastPostIndex);
         
     }
-    const paginateHeadEntertainment = paginateArray(headEntertainment, itemsPerHeadPage);
-    const paginateSubEntertainment= paginateArray(subEntertainment,itemsPerPage);
+    // const paginateSubEntertainment= paginateArray(entertainmentRight,itemsPerPage);
     const paginateAsideEntertainment = paginateArray(asideEntertainment,itemsPerPage);
     const paginateMainEntertainment = paginateArray(mainEntertainment,itemsPerPageMain);
 
     const totalItems = Math.max(
-        Math.ceil(headEntertainment.length/itemsPerHeadPage),
-        subEntertainment.length,
-        asideEntertainment.length,
+        // Math.ceil(headEntertainment.length/itemsPerHeadPage),
+        // entertainmentRight.length,
+        // asideEntertainment.length,
         Math.ceil(mainEntertainment.length/itemsPerPageMain)*itemsPerPage
     )
 
@@ -177,14 +160,11 @@ function EntertainmentData() {
   return (
     <div>
         <EntertainmentFirstComponent
-        headEntertainment={paginateHeadEntertainment}
-        subEntertainment={paginateSubEntertainment}
-        asideEntertainment={paginateAsideEntertainment}
-        mainEntertainment={paginateMainEntertainment}
-        paginate={paginate}
-        totalPages={totalPages}
-        currentPage={currentPage}
-
+            asideEntertainment={paginateAsideEntertainment}
+            mainEntertainment={paginateMainEntertainment}
+            paginate={paginate}
+            totalPages={totalPages}
+            currentPage={currentPage}
         />
     </div>
   )

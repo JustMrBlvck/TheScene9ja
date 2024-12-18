@@ -9,6 +9,8 @@ import EntertainmentComponent from './UI/EntertainmentComponent.jsx/Entertainmen
 import PoliticsComponent from './UI/PoliticsComponent/PoliticsComponent'
 import TechnologyComponent from './UI/TechnologyComponent/TechnologyComponent'
 import Footer from './PrimaryComponent/Footer'
+import DisplayFirstComponet from './UI/DisplayComponent/DisplayFirstComponet'
+import DisplayComponent from './UI/DisplayComponent/DisplayComponent'
 
 function Container() {
   return (
@@ -25,6 +27,8 @@ function Container() {
                         <Route path='/politics' element={<PoliticsComponent/>}/>
                         <Route path='/sports' element={<SportsComponent/>}/>
                         <Route path='/technology' element={<TechnologyComponent/>}/>
+
+                        <Route path='/display'element={<DisplayComponent/>}/>
                  </Routes>
 
                        <Footer/>

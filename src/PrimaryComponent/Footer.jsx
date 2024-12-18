@@ -20,7 +20,7 @@ function Footer() {
                 </div>
            </div>
 
-           <div className='h-[90px] bg-[#1A1B1D] text-white font-Custom font-medium  flex justify-evenly items-center lg:hidden'>
+           <div className='h-[90px] bg-[#1A1B1D] mt-auto text-white font-Custom font-medium md:mt-12 flex justify-evenly items-center lg:hidden'>
                 <Link >Privacy Policy</Link>
                 <Link >Terms & Condition</Link>
            </div>

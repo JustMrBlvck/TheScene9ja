@@ -11,14 +11,14 @@ import { Link } from 'react-router-dom';
 import SideNav from './SideNav';
 
 function Header() {
-  let [callNav, setCallNav] = useState("-350px")
+  let [callNav, setCallNav] = useState("-500px")
 
     function HeyNav() {
-       if (callNav == "-350px") {
+       if (callNav == "-500px") {
            setCallNav("0px")
            
        } else {
-           setCallNav("-350px")
+           setCallNav("-500px")
        }
     }   
  

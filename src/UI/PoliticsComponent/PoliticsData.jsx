@@ -2,138 +2,112 @@ import React, { useState } from "react";
 import PoliticsFirstComponent from "./PoliticsFirstComponent";
 
 function PoliticsData() {
-  const politicsHead = [
-    {
-      img: "https://www.channelstv.com/wp-content/uploads/2023/08/Francis-Nwifuru.png",
-      time: "2h",
-      author: "opeluwami akintayo",
-      heading: "Ebonyi gov suspends two commissioners, others over alleged misconduct",
-      about:
-        "He directed the indefinite suspension of the Commissioner for Housing and Urban Development, Engineer Francis Ori, and a three-month suspension for his counterpart Dr. Moses Ekuma, Commissioner for Health and Social Development.",
-    },
-    
-  ];
 
-  const politicsNews = [
-    {
-      img: "https://www.channelstv.com/wp-content/uploads/2024/11/Okpebholo_Portrait.png",
-      time: "4h",
-      author: "opeluwami akintayo",
-      heading: "Ebonyi gov suspends two commissioners, others over alleged misconduct",
-      about: "Data Breach: Gov Okpebholo Orders Urgent Review Of E-Governance Platform",
-    },
-    {
-      img: "https://www.channelstv.com/wp-content/uploads/2024/11/Abaribe-new.jpg",
-      time: "14h",
-      author: "donatus anuchebe",
-      heading: "Nigeria Would Probably Have Been Better If Peter Obi Won 2023 Election - Sen Abaribe",
-    },
-    {
-        img: "https://www.channelstv.com/wp-content/uploads/2024/11/Okpebholo_Portrait.png",
-        time: "4h",
-        author: "opeluwami akintayo",
-        heading: "Ebonyi gov suspends two commissioners, others over alleged misconduct",
-        about: "Data Breach: Gov Okpebholo Orders Urgent Review Of E-Governance Platform",
-      },
-      {
-        img: "https://www.channelstv.com/wp-content/uploads/2024/11/Abaribe-new.jpg",
-        time: "14h",
-        author: "donatus anuchebe",
-        heading: "Nigeria Would Probably Have Been Better If Peter Obi Won 2023 Election - Sen Abaribe",
-      },
-
-  ];
-   const subpolitics=[
-    {
-        img: "https://www.channelstv.com/wp-content/uploads/2024/11/obaseki-okebholo.jpg",
-        time: "22h",
-        author: "emmanuel egbommandu",
-        heading: "Almost 500 Edo Govt Vehicles Still Missing, Says Okpebholo’s Spokesman",
-      },
-      {
-        img: "https://www.channelstv.com/wp-content/uploads/2024/11/NiMET_NGF.jpg",
-        time: "1d",
-        author: "opelumai akintayo",
-        heading: "NiMet, Governors To Sign MoU On Climate Change",
-      },
-  ]
+//    const subpolitics=[
+//     {
+//         img: "https://www.channelstv.com/wp-content/uploads/2024/11/obaseki-okebholo.jpg",
+//         time: "22h",
+//         author: "emmanuel egbommandu",
+//         heading: "Almost 500 Edo Govt Vehicles Still Missing, Says Okpebholo’s Spokesman",
+//       },
+//       {
+//         img: "https://www.channelstv.com/wp-content/uploads/2024/11/NiMET_NGF.jpg",
+//         time: "1d",
+//         author: "opelumai akintayo",
+//         heading: "NiMet, Governors To Sign MoU On Climate Change",
+//       },
+//   ]
 
   const politicsMain = [
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2023/07/Remi-Tinubu.jpg',
-        about:'Oluremi Tinubu Joins 16 Days of Activism Against Gender-Based Violence'
+        id:0,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/katsina-1.jpg",
+        heading:"Don’t Just Vote, Contest Elections, Katsina Gov’s Wife Tells Women"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/11/PHOTOS_-Zulum-Assesses-Flood-Destruction-In-Borno-Distributes-Relief-Materials-To-Victims.jpg',
-        about:'PHOTOS: Zulum Assesses Flood Destruction In Borno, Distributes Relief  To Victims'
+        id:1,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/Kwankwaso-Obj-Duke.jpg",
+        heading:"Kwankwaso, Duke Meet Obasanjo In Abeokuta"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/10/Kola-Ologbondiyan.jpg',
-        about:'Subsidy Removal, Naira Floating Has Brought Nigeria To Its Knees — Ex-PDP Spokesman Ologbondiyan'
+        id:2,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/10/APC-Flag.jpg",
+        heading:"Ward Excos Suspend Ondo APC Chairman, Adetimehin"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/04/Kogi.jpg',
-        about:'Ododo Convenes Emergency Meeting Over Alleged Fulani Killing, Vows Punishment For Perpetrators'
+        id:3,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/Photo-combo-Gov-Mohammed_Tinubu.jpg",
+        heading:"Shine Your Eyes, Gov Mohammed Urges Tinubu To Remove ‘Excess Baggage’ In Cabinet"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/09/Obaseki-2.jpg',
-        about:"Okpebholo Sets Up Panel To Probe Obaseki’s Govt"
+        id:4,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/04/Ganduje_.jpg",
+        heading:"APC Determined To Get Rivers In 2027, Says Ganduje"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors-1.jpg',
-        about:'PDP Govs Ask Tinubu To Review Economic Policies'
+        id:5,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/Ogunwusi-Buhari.jpg",
+        heading:"PHOTOS: Ooni Of Ife Visits Buhari In Katsina"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors-forum.jpg',
-        about:'PDP Govs Say Party Reviewing Ondo Poll, Fault Edo Election'
+        id:6,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/05/Mudashiru-Obasa.jpg",
+        heading:"Tinubu Working To Bring Smiles To The Faces Of Nigerians, Says Obasa"
     },
     {
-
-
-        img:'https://www.channelstv.com/wp-content/uploads/2024/08/Obasanjo.jpg',
-        about:"‘Stop Making Jest Of Other Presidents’, Osinbajo’s Ex-Aide Advises Obasanjo"
+        id:7,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/08/Obasanjo.jpg',
+        heading:"‘Stop Making Jest Of Other Presidents’, Osinbajo’s Ex-Aide Advises Obasanjo"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors.jpg',
-        about:"PDP Governors Meet, Pledge Better Governance For Nigerians"
+        id:8,
+        imgSrc:"https://www.channelstv.com/wp-content/uploads/2023/03/Labour-Party-1.png",
+        heading:"Defection: LP Goes To Court, Wants Reps Seats Declared Vacant"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2023/07/Remi-Tinubu.jpg',
-        about:'Oluremi Tinubu Joins 16 Days of Activism Against Gender-Based Violence'
+        id:9,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2023/07/Remi-Tinubu.jpg',
+        heading:'Oluremi Tinubu Joins 16 Days of Activism Against Gender-Based Violence'
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/11/PHOTOS_-Zulum-Assesses-Flood-Destruction-In-Borno-Distributes-Relief-Materials-To-Victims.jpg',
-        about:'PHOTOS: Zulum Assesses Flood Destruction In Borno, Distributes Relief  To Victims'
+        id:10,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/PHOTOS_-Zulum-Assesses-Flood-Destruction-In-Borno-Distributes-Relief-Materials-To-Victims.jpg',
+        heading:'PHOTOS: Zulum Assesses Flood Destruction In Borno, Distributes Relief  To Victims'
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/10/Kola-Ologbondiyan.jpg',
-        about:'Subsidy Removal, Naira Floating Has Brought Nigeria To Its Knees — Ex-PDP Spokesman Ologbondiyan'
+        id:11,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/10/Kola-Ologbondiyan.jpg',
+        heading:'Subsidy Removal, Naira Floating Has Brought Nigeria To Its Knees — Ex-PDP Spokesman Ologbondiyan'
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/04/Kogi.jpg',
-        about:'Ododo Convenes Emergency Meeting Over Alleged Fulani Killing, Vows Punishment For Perpetrators'
+        id:12,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/04/Kogi.jpg',
+        heading:'Ododo Convenes Emergency Meeting Over Alleged Fulani Killing, Vows Punishment For Perpetrators'
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/09/Obaseki-2.jpg',
-        about:"Okpebholo Sets Up Panel To Probe Obaseki’s Govt"
+        id:13,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/09/Obaseki-2.jpg',
+        heading:"Okpebholo Sets Up Panel To Probe Obaseki’s Govt"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors-1.jpg',
-        about:'PDP Govs Ask Tinubu To Review Economic Policies'
+        id:14,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors-1.jpg',
+        heading:'PDP Govs Ask Tinubu To Review Economic Policies'
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors-forum.jpg',
-        about:'PDP Govs Say Party Reviewing Ondo Poll, Fault Edo Election'
+        id:15,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors-forum.jpg',
+        heading:'PDP Govs Say Party Reviewing Ondo Poll, Fault Edo Election'
     },
     {
-
-
-        img:'https://www.channelstv.com/wp-content/uploads/2024/08/Obasanjo.jpg',
-        about:"‘Stop Making Jest Of Other Presidents’, Osinbajo’s Ex-Aide Advises Obasanjo"
+        id:16,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/08/Obasanjo.jpg',
+        heading:"‘Stop Making Jest Of Other Presidents’, Osinbajo’s Ex-Aide Advises Obasanjo"
     },
     {
-        img:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors.jpg',
-        about:"PDP Governors Meet, Pledge Better Governance For Nigerians"
+        id:17,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors.jpg',
+        heading:"PDP Governors Meet, Pledge Better Governance For Nigerians"
     }
     
   ]
@@ -150,15 +124,11 @@ function PoliticsData() {
      return array.slice(indexOfFirstItem, indexOfLastItem);
    };
  
-   const paginatedPoliticsHead = paginateArray(politicsHead, itemsPerPage);
-   const paginatedPoliticsNews = paginateArray(politicsNews, itemsPerPage);
-   const paginatedSubpolitics = paginateArray(subpolitics, itemsPerPage);
+//    const paginatedSubpolitics = paginateArray(subpolitics, itemsPerPage);
    const paginatedPoliticsMain = paginateArray(politicsMain, itemsPerPageMain);
 
     const totalItems = Math.max(
-    politicsHead.length,
-    politicsNews.length,
-    subpolitics.length,
+    // subpolitics.length,
     Math.ceil(politicsMain.length / itemsPerPageMain) * itemsPerPage
   );
 
@@ -169,9 +139,8 @@ function PoliticsData() {
 
   return (
     <div>
-      <PoliticsFirstComponent politicsHead={paginatedPoliticsHead}
-        politicsNews={paginatedPoliticsNews}
-        subpolitics={paginatedSubpolitics}
+      <PoliticsFirstComponent
+        // subpolitics={paginatedSubpolitics}
         politicsMain={paginatedPoliticsMain}
         totalPages={totalPages}
         currentPage={currentPage}

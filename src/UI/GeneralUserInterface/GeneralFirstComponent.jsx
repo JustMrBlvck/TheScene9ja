@@ -103,28 +103,32 @@ function GeneralFirstComponent() {
                        {
                         [
                           {
+                            id:0,
                             headline: 'Three Die In Lagos Truck Accident',
                             imageSrc: "https://www.channelstv.com/wp-content/uploads/2024/11/lagos-accident-truck-.jpg",
                             time: "21 mins ago"
                           },
                            {
+                             id:1,
                              headline: "Viral Naira Abuse Video Not From Goje's Daughters Weedding, Says EFCC",
                              imageSrc: 'https://www.channelstv.com/wp-content/uploads/2023/01/EFCC-operatives.png',
                              time: "2 hours ago"
                            },
                          {
+                            id:2,
                              headline: "US Climated Action Won't End With Trump, Envoy Tells COP29",
                              imageSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/cop-29.jpg',
                              time: "2 hours ago"
                          },
                          {
+                           id:3,
                           headline: "NAFDAC Seizes Counterfeit Wines Worth $40k In Nasarawa",
                           imageSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/nAFDAC-fake-wines.jpg',
                           time: "5 hours ago"
                          },
                         ].map((medium, index)=>(
                             <div key={index} className="flex items-center space-x-4">
-                                <img src={medium.imageSrc} className="w-20 h-20 rounded-lg  bg-[red] object-cover" />
+                                <img src={medium.imageSrc} className="w-20 h-20 rounded-lg object-cover" />
 
                                 <Link className="text-[20px] font-Custom font-medium text-gray-700  hover:text-PrimaryColor">{medium.headline}<p className='text-[16px] mt-1'>{medium.time}</p></Link>
                             </div>
@@ -135,10 +139,10 @@ function GeneralFirstComponent() {
              </div>
 
                       {/* Lg General Section */}
-            <div className='w-[90%] lg:w-9/12 mt-14 hidden lg:block'>
+            <div className='w-[90%] lg:w-[83%] mt-14 hidden lg:block'>
                   <h1 className='font-Custom text-PrimaryColor text-3xl font-bold'>Top Stories</h1>
 
-                     <div className="min-h-[500px] mt-7 grid grid-cols-[65%,35%] space-x-4 border-[#8080802f] border-t-[.2px]  border-b-[.2px]">
+                     <div className="min-h-[500px] mt-7 grid grid-cols-[65%,35%] space-x-4 border-[#8080802f] border-t-[.2px]">
                           <div className='mt-5'>
                                <Link >
                                    <img src={TopStories.ImageSrc}/>
@@ -149,7 +153,7 @@ function GeneralFirstComponent() {
                                <div className='w-1/2 mt-3'><Link className='font-Custom text-PrimaryColor font-medium text-[16px]'>{TopStories.SubHeadLine}</Link></div>
 
 
-                               <div className='h-[200px] p-3 mt-9 border-[#8080802f] grid grid-cols-3 gap-8 border-t-[.2px]'>
+                               <div className='h-[200px] p-3 mt-9 border-[#8080802f] grid grid-cols-3 gap-5 border-t-[.2px]'>
                                   {topStoriesArray.map((newsItemsS, index)=>(
                                         <Link key={index} className='h-[200px] bg-[] grid'>
                                         <div className='bg-[]'>
@@ -164,42 +168,47 @@ function GeneralFirstComponent() {
                                </div>  
                           </div>
 
-                          <div className='border-[#8080802f] border-l-[.2px] mt-5 p-5'>
+                          <div className='border-[#8080802f] border-l-[.2px] mt-7 lg:mt-5 p-5'>
                                 <h1 className='font-Custom text-PrimaryColor text-3xl font-bold'>Latest Stories</h1>
                                 
                                 <div className="space-y-4 mt-5">
                                   {[
                                      {
+                                      id:0,
                                        headline: 'Three Die In Lagos Truck Accident',
                                        imageSrc: "https://www.channelstv.com/wp-content/uploads/2024/11/lagos-accident-truck-.jpg",
                                        time: "21 mins ago"
                                      },
                                       {
+                                        id:1,
                                         headline: "Viral Naira Abuse Video Not From Goje's Daughters Weedding, Says EFCC",
                                         imageSrc: 'https://www.channelstv.com/wp-content/uploads/2023/01/EFCC-operatives.png',
                                         time: "2 hours ago"
                                       },
                                     {
+                                        id:2,
                                         headline: "US Climated Action Won't End With Trump, Envoy Tells COP29",
                                         imageSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/cop-29.jpg',
                                         time: "2 hours ago"
                                     },
-                                    {
+                                    {  
+                                      id:3,
                                       headline: "Obasaki Pardons Inmates With Less Than One Year To Serve",
                                       imageSrc:'https://www.channelstv.com/wp-content/uploads/2024/09/Obaseki-2.jpg',
                                       time: "3 hours ago"
                                   },
                                   {
+                                    id:4,
                                     headline: "NAFDAC Seizes Counterfeit Wines Worth $40k In Nasarawa",
                                     imageSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/nAFDAC-fake-wines.jpg',
                                     time: "5 hours ago"
                                 },
-                                  ].map((headlineS, index) => (
-                                    <div key={index} className="flex items-center space-x-4">
-                                      <img src={headlineS.imageSrc} className="w-20 h-20 rounded-lg  object-cover" />
-                                      <Link className="text-[20px] font-Custom font-medium text-gray-700  hover:text-PrimaryColor">{headlineS.headline}
+                                  ].map((index) => (
+                                    <div key={index.id} className="flex items-center space-x-4">
+                                      <img src={index.imageSrc} className="w-20 h-20 rounded-lg  object-cover" />
+                                      <Link className="text-[20px] font-Custom font-medium text-gray-700  hover:text-PrimaryColor">{index.headline}
                                       
-                                         <p className='text-[16px] mt-1 text-black'>{headlineS.time}</p>
+                                         <p className='text-[16px] mt-1 text-black'>{index.time}</p>
                                       </Link>
                                     </div>
                                   ))}

@@ -33,3 +33,8 @@
     height: 90%;
     width: 100%;
   } */
+
+  .btn-active{ 
+    font-weight: bold;
+    background-color: #D7AE61;
+  }
