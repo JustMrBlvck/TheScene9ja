@@ -118,16 +118,16 @@ function EntertainmentFirstComponent({
                                 ))}
                         </Link>
 
-                        <div className='mt-3'>
+                        <div className='mt-3 md:hidden lg:block'>
                                                  {/* Advert Box */}
-                           <Link className='w-full  lg:flex lg:flex-col lg:items-center lg:mt-12'>
+                           <Link className='w-full flex flex-col items-center lg:mt-12'>
                                  <h3 className='font-Custom font-bold text-[gray]'>Advertisement</h3>
 
                                 <div className='flex justify-center'><a href='' className='bg-[#F6F6F6] h-[270px] w-full'><img src={"https://tpc.googlesyndication.com/simgad/5974062208041488507"}/></a></div>
                            </Link>
 
                                                    {/* Advert Box */}
-                           <Link className='w-full lg:flex lg:flex-col lg:items-center lg:mt-6'>
+                           <Link className='w-full flex flex-col items-center lg:mt-6'>
                                  <h3 className='font-Custom font-bold text-[gray]'>Advertisement</h3>
 
                                 <div className='flex justify-center'><a href='' className='bg-[#F6F6F6] h-[270px] w-full'><img src={"https://tpc.googlesyndication.com/simgad/5974062208041488507"}/></a></div>

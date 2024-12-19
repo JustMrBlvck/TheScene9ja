@@ -1,237 +1,157 @@
 import React from 'react'
-// import { Link } from 'react-daisyui'
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BiSolidMessageAdd } from "react-icons/bi";
 
 function TechnologySecondComponent() {
-    const news=[
+
+    const mainTechnology = [
         {
+            id:0,
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2021/05/Amazon-HQ-2.jpg",
+            heading:"Amazon Invests Another $4bn In AI Firm Anthropic"
+        }, {
             id:1,
-            newstag:'EDUCATION',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2024/09/NSE-.jpg?resize=309%2C368&ssl=1',
-            newshead:'Female leadership a panacea to Africa’s underdevelopment – Oguntala',
-            subheading:'The President of the Nigerian Society of Engineers (NSE), Mrs. Margaret Oguntala, has advocated capacity building for the female professionals...',
-            newsdate:'SEPTEMBER 12, 2024',
-            reporter:'SCENE 9JA'
-        },
-
-        {
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2023/02/TikTok-2.jpg",
+            heading:"TikTok Expands Digital Safety Initiative In Nigeria, Partners NITDA, DSN"
+        }, {
             id:2,
-            newstag:'TECHNOLOGY',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2022/11/NCC-CORRECT-OFFICIAL-LOGO.jpg?resize=350%2C250&ssl=1',
-            newshead:'ITU ranks Nigeria high in 5G digital transformation readiness',
-            subheading:'A new report of the International Telecommunications Union (ITU), has ranked Nigeria very high at 71 per cent, in comparative...',
-            newsdate:'JULY 24, 2024',
-            reporter:'SCENE 9JA'
-        },
-
-        {
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/11/Social-media.jpg",
+            heading:"Australia Passes Landmark Social Media Ban For Under 16s"
+        }, {
             id:3,
-            newstag:'NEWS',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2024/07/smart-Router-new-image.png?resize=350%2C250&ssl=1',
-            newshead:'Airtel launches smart router, offering Smart TV experience on regular TVs',
-            subheading:'Leading telecommunications service provider, Airtel Nigeria, has launched a new device called Airtel Smart Router, a 4G router capable of...',
-            newsdate:'JULY 11, 2024',
-            reporter:'SCENE 9JA'
-        },
-
-        {
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/11/gaming.jpg",
+            heading:"Exploring Entertainment Trends In 2024: From Digital Innovations Rise Of Immersive Gaming Experiences"
+        },{
             id:4,
-            newstag:'TECHNOLOGY',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2024/07/ITREALMS-15.jpg?resize=350%2C250&ssl=1',
-            newshead:'Ojo, Adebayo, Nnamani, Ekuwem, others join DigitalSENSE Hall of Fame',
-            subheading:'Sunrise News, July 8, 2024, Lagos, Nigeria: The Executive Director, Media Rights Agenda, Mr. Edetaen Ojo alongside the chairman, Association...',
-            newsdate:'JULY 8, 2024',
-            reporter:'SCENE 9JA'
-        },
-
-        {
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2023/03/us-social-media-china-internet-technology-telecoms-computers-wireless-tik-tok.jpg",
+            heading:"Decision Expected In TikTok Appeal Of US Ban Threat"
+        },{
             id:5,
-            newstag:'TECHNOLOGY',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2024/07/ITRealms-2.jpg?resize=350%2C250&ssl=1',
-            newshead:'DigitalSENSE Africa honours Ekuwem, Odusote, Nwannenna, Adebayo, Uzor, others',
-            subheading:'By Demilade Adeniyi Sunrise News - July 1, 2024: The immediate past Secretary to the Government of Akwa-Ibom State, Dr. Emmanuel...',
-            newsdate:'JULY 1, 2024',
-            reporter:'SCENE 9JA'
-        },
-
-        {
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2022/10/Meta-1.jpg",
+            heading:"Meta Says No Sign Of AI Bedeviling Elections In 2024"
+        },{
             id:6,
-            newstag:'BUSSINESS',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2024/04/HQUBE.jpeg?resize=350%2C250&ssl=1',
-            newshead:'Cybercrimes: EFCC, Cyber Security experts tasks Nigerians on data protection',
-            subheading:'To curb the huge losses incurred by Nigerians owing to the sharp practices prevalent in the digital space, Economic and...',
-            newsdate:'APRIL 21, 2024',
-            reporter:'SCENE 9JA'
-        },
-
-        {
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/11/Social-Media-1.jpg",
+            heading:"Social Media Companies Slam Australia’s Under-16 Ban"
+        },{
             id:7,
-            newstag:'TECHNOLOGY',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2024/03/Undersea-Cable.jpg?resize=303%2C167&ssl=1',
-            newshead:'Voice, Data Services Affected by Undersea Cable Cuts Restored',
-            subheading:'Following the disruption on March 14, 2024, which affected data and voice services due to cuts in undersea fibre optics...',
-            newsdate:'MARCH 18, 2024',
-            reporter:'SCENE 9JA'
-        },
-
-        {
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/NITDA.jpg",
+            heading:"NITDA Alerts Nigerians About Malware Stealing Banking Details"
+        },{
             id:8,
-            newstag:'NEWS',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2023/12/NIMECHE.jpg?resize=350%2C250&ssl=1',
-            newshead:'Mechanical engineers begin construction of tech advancement academy in Ogun',
-            subheading:'The Nigerian Institution of Mechanical Engineers (NIMechE), on Thursday, conducted the ground breaking ceremony for its Mechanical Engineering Technology Advancement...',
-            newsdate:'DECEMBER 15, 2023',
-            reporter:'SCENE 9JA'
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/TikTok-US-China.jpg",
+            heading:"TikTok Faces US Ban After Losing Court Appeal"
+        },{
+            id:9,   
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/12/infinix-nigeria-technology-award.jpg",
+            heading:"Infinix Shines With Double Wins At Nigeria Technology Awards 2024"
+        },{
+            id:10,   
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/11/Meta.jpg",
+            heading:"EU Fines Meta $840m For ‘Abusive’ Facebook Ad Practices"
+        },{
+            id:11,   
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/11/games-nintendo__FilesJapanGamesBusinessNintendo-1.jpg",
+            heading:"Nintendo Courts Non-Gamers In ‘About-Turn’ Strategy"
+        },{
+            id:12,   
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2022/10/Meta-1.jpg",
+            heading:"South Korea Fines Meta For Illegal Collection Of User Data"
+        },{
+            id:13,   
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2020/09/Sonys-PlayStation-5.jpg",
+            heading:"Playstation 5 Pro Goes On Sale, Will Gamers Pay Hefty Price To Play?"
         },
-
         {
-            id:9,
-            newstag:'BUSSINESS',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2023/12/Brick.jpg?resize=350%2C250&ssl=1',
-            newshead:'Experts task bricklayers on technology adoption',
-            subheading:'Some experts in the construction sector have advised bricklayers to embrace new technologies for durable constructions that would boost production...',
-            newsdate:'DECEMBER 15, 2023',
-            reporter:'SCENE 9JA'
+            id:14,   
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/10/ChatGPT.jpg",
+            heading:"OpenAI Releases ChatGPT Search Engine, Taking On Google"
+        },{
+            id:9,   
+            imgSrc:"https://www.channelstv.com/wp-content/uploads/2024/08/A-Google-logo-is-seen-during-the-Made-by-Google-media-event__UsInternetTelecommunicationComputersGoogle.jpg",
+            heading:"Russia Says Massive Fines Against Google ‘Symbolic’"
         },
+    ];
 
-        {
-            id:10,
-            newstag:'BUSSINESS',
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2023/12/Award-scaled.jpg?resize=350%2C250&ssl=1',
-            newshead:'Gibeon & Ajalon Global Concepts Limited Shines at NIEE’s 2023 International Conference/AGM',
-            subheading:'The Nigerian Institution of Environmental Engineers a Division of Nigerian Society of Engineers has given an award of excellence to...',
-            newsdate:'DECEMBER 15, 2023',
-            reporter:'SCENE 9JA'
-        }
-    ]
-
-
-
-    const ads=[
-        {
-            id:1,
-            image:'https://sunrise.ng/wp-content/uploads/2024/08/336x280-1.png'
-        },
-
-        {
-            id:2,
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2024/07/NNPLC.jpeg?w=336&ssl=1'
-        },
-
-        {
-            id:3,
-            image:'https://dsp-media.eskimi.com/upload/143900_3394522394_8b67b037f2f96b79dcf29fd68db0ca86.jpg'
-        },
-
-        {
-            id:4,
-            image:'https://sunrise.ng/wp-content/uploads/2024/07/300x250-Ready-for-the-Future.jpg'
-        },
-
-        {
-            id:5,
-            image:'https://sunrise.ng/wp-content/uploads/2024/11/Omi-BUS.jpeg'
-        },
-
-        {
-            id:6,
-            image:'https://sunrise.ng/wp-content/uploads/2024/04/RSA-Mortgage-digital-banner-300x250-1.png'
-        },
-
-        {
-            id:7,
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2021/08/ezgif.com-gif-maker-1.gif?fit=300%2C250&ssl=1'
-        },
-
-        {
-            id:8,
-            image:'https://i0.wp.com/sunrise.ng/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-26-at-6.51.50-PM.jpeg?fit=1080%2C133&ssl=1'
-        },
-
-        {
-            id:9,
-            image:'https://track.pisimobile.com/r/BclvjvZVfCzHNcwWAVCzyC_c5X3T6_C_9EODNLRVbw43NDZhMWI1ZjQ2MTUzZmZj/upload/143942_2887916580_32e2fd6abb14ba6f6f17b2775fa616b3.jpg'
-        },
-
-        {
-            id:10,
-            image:'https://track.pisimobile.com/r/BclvjvZVfCzHNcwWAVCzyC_c5X3T6_C_9EODNLRVbw43NDZhMWI1ZjQ2MTUzZmZj/upload/143942_2887916580_32e2fd6abb14ba6f6f17b2775fa616b3.jpg'
-        }
-    ]
-  return (
-    <div>
-        <div className=" min-h-[400px] w-full bg-[] flex justify-center ">
-            <div className="min-h-[300px] w-[95%] md:w-[90%] lg:w-[90%] grid grid-cols-1 lg:grid-cols-[60%,40%] ">
-            <div className="min-h-[300px] md:min-h-[300px] bg-[]">
-                <div className=" h-[100px] w-[80%] md:w-[40%] bg-[]">
-                    <div className=" h-[50px] bg-[] flex items-center text-[#303030]">
-                    <Link><section className=' flex items-center hover:text-PrimaryColor'> Home</section></Link> <section className=' flex items-center pt-1'><MdKeyboardArrowRight /></section>
-                    <Link><section className=' flex items-center hover:text-PrimaryColor'>Category</section></Link> <section className=' flex items-center pt-1'><MdKeyboardArrowRight /> </section>
-                        <section className=' flex items-center text-[gray]'>Tecnology</section>
-                    </div>
-                    <div className=" h-[50px] bg-[] text-[28px] md:text-[30px] font-bold ">
-                        <h1>Technology</h1>
-                    </div>
-                </div>
-
-                    <div className="  min-h-[200px] md:min-h-[300px] mt-3 w-full grid grid-cols-1 md:gap-0">
-
-                    {
-                        news.map((news)=>(
-                            <div key={news.id} className=" md:min-h-[300px] min-h-[160px] mb-3  w-full bg-[] grid grid-cols-2 md:grid-cols-[40%,50%,10%] lg:grid-cols-2 gap-3 md:gap-3">
-
-                            <div className=" bg-[] min-h-[160px] md:h-[300px] relative">
-                            <aside className=' h-[30px] min-w-[80px] text-[10px] absolute top-3 left-3  bg-PrimaryColor text-white flex justify-center items-center'>
-                                <p>{news.newstag}</p>
-                            </aside>
-                            <img src={news.image}  alt="" />
-                        </div>
-                        <div className=" bg-[]  md:min-h-[350px]">
-                            <section className=' font-bold text-[17px] md:text-[22px] hover:text-PrimaryColor '>
-                                <p>{news.newshead}</p>
-                            </section>
-    
-                            <section className=' hidden md:inline-block mt-3 text-[gray] '>
-                                <p>{news.subheading}</p>
-                            </section>
-    
-                            <section className=' w-full flex  items-center text-[10px] font-semibold gap-2 mt-3'>
-                                <p className=' flex gap-1 text-[gray]'>BY <span className=' text-PrimaryColor'>{news.reporter}</span></p>
-                                <p className=' text-[gray]'>{news.newsdate}</p>
-                                <span className=' hidden md:inline-block'><BiSolidMessageAdd /></span>
-                            </section>
-    
-                            <section className=' hidden  md:inline-block mt-3'>
-                                <button className=' h-[32px] w-[120px] bg-white ' style={{boxShadow:'0 0 3px black'}}>READ MORE</button>
-                            </section>
-                        </div>
-                    </div>  
-                        ))
-                    }
-
-</div>
-               
-
-            </div>
-
-
-
-            <div className="min-h-[300px] bg-[] grid grid-cols-1 gap-10 p-10">
-                {
-                    ads.map((ads)=> (
-                        <div key={ads.id} className=" h-[300px] w-[70%] bg-[]">
-                    <img src={ads.image} alt="" />
-                </div>
-                    ))
-                }
-            </div>
-            </div>
        
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPageMain = 9;
+
+    const totalItems = mainTechnology.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPageMain);
+
+    const paginate = (pageNumber) => {
+        const validPageNumber = Math.max(1, Math.min(pageNumber, totalPages));
+        setCurrentPage(validPageNumber);
+    };
+
+    const paginateArray = (array, itemsPerPage) => {
+        const indexOfLastItem = currentPage * itemsPerPage;
+        const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+        return array.slice(indexOfFirstItem, indexOfLastItem);
+    };
+
+    const paginatedMainTechnology = paginateArray(mainTechnology, itemsPerPageMain);
+
+  
+ return (
+        <div className='flex items-center flex-col dark:text-white'>
+
+    
+                {/* Advert Box */}
+            <Link className='md:h-[190px] w-[90%] lg:w-[83%]bg-[#F6F6F6] md:flex items-center justify-center mt-10'> 
+                    <a href=""><img src={"https://s0.2mdn.net/simgad/17325214540452252885"} /></a>
+            </Link>
+    
+    
+              <div className='w-[95%] lg:w-[83%]'>
+
+                   <div className='min-h-[300px] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[75%,25%] mt-4 gap-5 border-t-[.2px] border-[#8080802f] border-b-[.2px]'>
+                        <Link className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
+                                  {paginatedMainTechnology.map((item)=>(
+                                        <div key={item.id} className='flex w-full items-center flex-col space-y-4'>
+                                            <div className='w-full'><img src={item.imgSrc} className='lg:w-[260px]'/></div>                                    
+                                            
+                                            <div className=' w-full font-Custom font-bold lg:text-[17px] hover:text-PrimaryColor'><Link>{item.heading}</Link></div> 
+                                        </div>
+                                  ))}
+                        </Link>
+
+                        <div className="md:hidden lg:block">
+                              {/* Advert Box */}
+                            <Link className='w-full flex flex-col items-center lg:mt-12'>
+                                    <h3 className='font-Custom font-bold text-[gray]'>Advertisement</h3>
+    
+                                <div className='flex justify-center'><a href='' className='bg-[#F6F6F6] flex justify-center h-[270px] w-full'><img src={"https://tpc.googlesyndication.com/simgad/5974062208041488507"}/></a></div>
+                            </Link>
+    
+                                                    {/* Advert Box */}
+                            <div className='w-full mt-7 flex flex-col items-center lg:mt-6'>
+                                    <h3 className='font-Custom font-bold text-[gray]'>Advertisement</h3>
+    
+                                <div className='flex justify-center items-center bg-[#F6F6F6]'><a href='' className='bg-[#F6F6F6] flex justify-center items-center h-[270px] w-full'><img src={"https://tpc.googlesyndication.com/simgad/2316020753188551016"}/></a></div>
+                            </div>
+                            
+                        </div> 
+                   </div>
+
+              </div>
+
+              <div className="mt-[40px]  md:w-[96%] lg:w-[83%] lg:mt-16">
+                  <div className='min-h-[60px] rounded-xl w-full  gap-2 flex items-center border lg:w-[17%] border-[#8080802f]'>
+                    {Array.from({ length: totalPages }, (_, i) => (
+                        <button
+                        key={i + 1}
+                        className={`border-none btn ${currentPage === i + 1 ? 'btn-active' : ''}`}
+                        onClick={() => paginate(i + 1)}
+                        >
+                        {i + 1}
+                        </button>
+                     ))}
+                  </div>
+             </div>
+
         </div>
-      
-    </div>
   )
 }
 

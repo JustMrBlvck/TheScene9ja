@@ -119,7 +119,7 @@ function NewsSecondComponent() {
                 </div>
 
 
-           <div className='min-h-[790px] md:static lg:sticky lg:top-0'>
+           <div className='min-h-[790px] lg:sticky lg:top-0'>
               <div className='mt-10 lg:ml-12'>
                 <h1 className='font-Custom font-bold text-[25px] ml-[-4px]'>Latest Posts</h1>
                     {LatestNews.map((index)=>(

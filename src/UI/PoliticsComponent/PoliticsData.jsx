@@ -108,7 +108,12 @@ function PoliticsData() {
         id:17,
         imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/11/PDP-governors.jpg',
         heading:"PDP Governors Meet, Pledge Better Governance For Nigerians"
-    }
+    },
+    {
+        id:18,
+        imgSrc:'https://www.channelstv.com/wp-content/uploads/2024/10/Kola-Ologbondiyan.jpg',
+        heading:'Subsidy Removal, Naira Floating Has Brought Nigeria To Its Knees — Ex-PDP Spokesman Ologbondiyan'
+    },
     
   ]
 
