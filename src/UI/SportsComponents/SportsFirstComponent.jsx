@@ -46,7 +46,7 @@ function SportsFirstComponent() {
                        <div className='h-[400px]  mt-9 overflow-scroll overflow-x-hidden md:hidden lg:block space-y-4 lg:mt-5'>
                            {sportsHeadingLeft.map((sportsHeadingLeft, index)=>(
                               <div key={index} className='flex items-center space-x-4 mr-3'>
-                                    <Link className="text-[20px] font-Custom font-medium text-gray-700 lg:text-[17px] hover:text-PrimaryColor">{sportsHeadingLeft.topic}</Link>
+                                    <Link className="text-[20px] font-Custom font-medium  lg:text-[17px] hover:text-PrimaryColor">{sportsHeadingLeft.topic}</Link>
 
                                     <Link><img src={sportsHeadingLeft.imgSrc} className="w-25 h-20  rounded-lg  object-cover" /></Link>
                               </div>
