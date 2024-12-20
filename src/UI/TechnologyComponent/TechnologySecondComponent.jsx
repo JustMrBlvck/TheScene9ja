@@ -137,8 +137,8 @@ function TechnologySecondComponent() {
 
               </div>
 
-              <div className="mt-[40px]  md:w-[96%] lg:w-[83%] lg:mt-16">
-                  <div className='min-h-[60px] rounded-xl w-full  gap-2 flex items-center border lg:w-[17%] border-[#8080802f]'>
+              <div className=" md:w-[96%] lg:w-[83%] lg:mt-10">
+                  <div className='min-h-[60px] rounded-xl w-full  gap-2 p-2 flex items-center border lg:w-[17%] border-[#8080802f]'>
                     {Array.from({ length: totalPages }, (_, i) => (
                         <button
                         key={i + 1}

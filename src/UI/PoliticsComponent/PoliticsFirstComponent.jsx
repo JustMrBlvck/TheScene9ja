@@ -113,7 +113,7 @@ const politicsRight = [
            
           <div className='w-[95%] lg:w-[83%] mt-6'>
 
-               <div className="min-h-[300px] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[75%,25%] mt-4 gap-5 border-t-[.2px] border-[#8080802f] border-b-[.2px]">
+               <div className="min-h-[350px] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[75%,25%] mt-4 gap-5 border-t-[.2px] border-[#8080802f] border-b-[.2px]">
                     <Link className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
                          {politicsMain.map((index)=>(
                             <div key={index.id} className='flex w-full items-center flex-col space-y-4'>
@@ -134,7 +134,7 @@ const politicsRight = [
                         </Link>
 
                                                 {/* Advert Box */}
-                        <div className='w-full mt-7 flex flex-col items-center lg:mt-6'>
+                        <div className='w-full mt-4 flex flex-col items-center lg:mt-6'>
                               <h3 className='font-Custom font-bold text-[gray]'>Advertisement</h3>
 
                             <div className='flex justify-center items-center bg-[#F6F6F6]'><a href='' className='bg-[#F6F6F6] flex justify-center items-center h-[270px] w-full'><img src={"https://tpc.googlesyndication.com/simgad/2316020753188551016"}/></a></div>
@@ -145,17 +145,20 @@ const politicsRight = [
 
           </div>
 
-          <div className='min-h-[60px] gap-2 flex items-center p-2 border border-[#8080802f] mt-[40px] rounded-xl w-full md:w-[96%] lg:w-[17%] lg:mt-16'>
-              {Array.from({length:totalPages},(_, i)=>(
-                  <button
-                  key={i + 1}
-                  className={`border-none btn ${currentPage === i + 1 ? "btn-active" : ""}`}
-                  onClick={() => paginate(i + 1)}
-              >
-                  {i + 1}
-              </button>
-              ))}
-        </div>
+         
+          <div className="w-[95%] lg:w-[83%] lg:mt-10">
+              <div className='min-h-[60px] rounded-xl w-full gap-2 p-2 border lg:w-[17%] border-[#8080802f]'>
+                {Array.from({ length: totalPages }, (_, i) => (
+                    <button
+                    key={i + 1}
+                    className={`h-10 w-10 border-none btn ${currentPage === i + 1 ? 'btn-active' : ''}`}
+                    onClick={() => paginate(i + 1)}
+                    >
+                    {i + 1}
+                    </button>
+                  ))}
+              </div>
+          </div>
 
     </div>
   );
