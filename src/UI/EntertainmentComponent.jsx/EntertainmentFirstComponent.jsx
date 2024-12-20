@@ -47,7 +47,7 @@ function EntertainmentFirstComponent({
     }
 ]
   return (
-      <div className='bg-white flex flex-col items-center dark:text-white'>
+      <div className=' flex flex-col items-center dark:text-white'>
 
                  {/* Advert Box */}
             <Link className='md:h-[130px] w-[90%] lg:w-9/12bg-[#F6F6F6] md:flex items-center justify-center mt-10'> 

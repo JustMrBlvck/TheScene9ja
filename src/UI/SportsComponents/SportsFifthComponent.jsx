@@ -64,7 +64,7 @@ function SportsFifthComponent() {
   ]
 
   return (
-    <div className='bg-[#F6F6F6] flex items-center flex-col dark:text-white'>
+    <div className=' flex items-center flex-col dark:text-white'>
 
           {/* Advert Box */}
           <div className='md:h-[200px] w-[90%] lg:w-9/12bg-[#F6F6F6] md:flex items-center justify-center mt-10'> 

@@ -35,7 +35,7 @@ function SportsThirdComponent() {
    ]
 
   return (
-    <div className='bg-white flex items-center flex-col dark:text-white'>
+    <div className=' flex items-center flex-col dark:text-white'>
          
          <div className='w-[90%] lg:w-9/12 mt-14 md:mt-14 lg:mt-24'>
 
