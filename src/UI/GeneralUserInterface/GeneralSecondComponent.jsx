@@ -56,7 +56,7 @@ function GeneralSecondComponent() {
    ]
 
   return (
-    <div className='bg-[white] flex flex-col items-center'>
+    <div className='dark:text-white flex flex-col items-center'>
                                  {/* Mobile and Medium Screens News/Politics Section */}
             <div className='w-[95%] mt-16 lg:hidden'>
                   <h1 className='font-Custom text-PrimaryColor text-4xl font-bold lg:mt-0'>News & Politics</h1>

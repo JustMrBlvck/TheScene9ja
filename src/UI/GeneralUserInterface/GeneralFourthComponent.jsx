@@ -17,7 +17,7 @@ function GeneralFourthComponent() {
     } 
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center dark:text-white'>
 
             <div className='w-[95%] lg:w-[83%] mt-16'>
                   <h1 className='font-Custom text-PrimaryColor text-3xl font-bold'>Entertainment</h1>

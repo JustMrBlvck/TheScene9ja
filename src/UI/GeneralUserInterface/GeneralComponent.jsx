@@ -7,7 +7,7 @@ import GeneralFifthComponent from './GeneralSFifthComponent'
 
 function GeneralComponent() {
   return (
-    <div>
+    <div className='dark:text-white'>
          
             <GeneralFirstComponent/>
             <GeneralSecondComponent/>

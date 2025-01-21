@@ -40,7 +40,7 @@ function GeneralThirdComponent() {
   ]
 
   return (
-    <div className='bg-[white] flex flex-col items-center'>
+    <div className='dark:text-white flex flex-col items-center'>
         
             <div className='w-[95%] mt-14 lg:w-[83%]'>
                 <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Sports</h1>

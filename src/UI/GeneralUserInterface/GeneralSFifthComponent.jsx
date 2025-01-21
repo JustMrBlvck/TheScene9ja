@@ -36,7 +36,7 @@ function GeneralFifthComponent() {
     //     }
     // ]
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center dark:text-white'>
         
             <div className='w-[95%] lg:w-[83%] mt-20'>
                         <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Technology</h1>

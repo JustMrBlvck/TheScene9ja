@@ -33,10 +33,10 @@ function GeneralFirstComponent() {
           }
 
   return (
-    <div className='bg-[white] flex flex-col items-center'>
+    <div className='dark:text-white flex flex-col items-center'>
 
                      {/* Advert Box */}
-           <div className='h-[100px] w-[95%] md:hidden lg:w-9/12 bg-[#F6F6F6] flex items-center justify-center mt-10'> 
+           <div className='h-[100px] w-[95%] md:hidden lg:w-9/12 dark:text-white flex items-center justify-center mt-10'> 
                  <img src={advertBox.AD} />
            </div>
                           {/* Mobile and Medium Screens General Section */}
