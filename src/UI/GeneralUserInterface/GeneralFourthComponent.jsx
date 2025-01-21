@@ -32,11 +32,11 @@ function GeneralFourthComponent() {
 
                                 <Link><img src={indexEntertainment.imgSrc} className='md:w-full mt-5 lg:ml-7'/></Link>
 
-                                <Link className='font-Custom font-bold text-2xl md:text-3xl text-[#1B1C1D] hover:text-PrimaryColor'><p className='md:ml-3 lg:ml-7 mt-4'>{indexEntertainment.topicSubHeading}</p></Link>
+                                <Link className='font-Custom font-bold text-2xl md:text-3xl text-[#1B1C1D]  dark:text-white hover:text-PrimaryColor'><p className='md:ml-3 lg:ml-7 mt-4'>{indexEntertainment.topicSubHeading}</p></Link>
 
                                 <p className='font-Custom font-medium md:ml-3 mt-2 md:w-[450px] lg:w-[380px]  lg:ml-7  text-PrimaryColor'>{indexEntertainment.topic}</p>
 
-                                <div className='flex items-center space-x-1  ml-5 mt-3 font-Custom font-bold text-[#004081]'>
+                                <div className='flex items-center space-x-1  ml-5 mt-3 font-Custom font-bold text-[#004081]  dark:text-white'>
                                     <div className='h-[8px] w-[8px] bg-[#791212]'></div><p className='text-[16px] font-Custom'>{indexEntertainment.poster}</p>  
                                 </div>
                           </div>
@@ -50,7 +50,7 @@ function GeneralFourthComponent() {
                              </Link>
 
                              <div className='p-3'>
-                                 <Link className='font-Custom font-bold text-[20px] text-[#1B1C1D] hover:text-PrimaryColor'>{entertainmentLeftDiv.topic}</Link>
+                                 <Link className='font-Custom font-bold text-[20px] text-[#1B1C1D]  dark:text-white hover:text-PrimaryColor'>{entertainmentLeftDiv.topic}</Link>
                              </div>
 
                              <p className='mt-2 p-1 w-5/3 text-[20px] md:text-[20px] lg:text-[16px] font-Custom'>
@@ -58,7 +58,7 @@ function GeneralFourthComponent() {
                              </p>
 
                                   
-                             <div className='flex items-center p-3 mt-8 space-x-2 font-Custom font-medium text-[#004081]'>
+                             <div className='flex items-center p-3 mt-8 space-x-2 font-Custom font-medium text-[#004081]  dark:text-white'>
                                  <div className='h-[10px] w-[10px] bg-[#791212]'></div><Link>{entertainmentLeftDiv.poster}</Link>  
                              </div>  
 

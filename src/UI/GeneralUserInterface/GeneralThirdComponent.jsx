@@ -49,16 +49,16 @@ function GeneralThirdComponent() {
                       <div className='flex justify-center mt-5 border-t-[3px] border-PrimaryColor'>
                             <div className=''>      
                                   <div className='flex items-center space-x-1 md:ml-0 lg:ml-5 mt-3'>
-                                      <div className='h-[8px] w-[8px] bg-[#791212]'></div><Link className='text-[16px] font-Custom dark:text-black'>SPORTS</Link>  
+                                      <div className='h-[8px] w-[8px]  dark:text-white bg-[#791212]'></div><Link className='text-[16px] font-Custom dark:text-black'>SPORTS</Link>  
                                   </div>
 
                                   <Link><img src={Sports.imgSrc} className='w-[98%] md:w-[98%]  md:ml-0 mt-5 h-[300px] lg:w-[80%] lg:ml-7'/></Link>
 
-                                  <Link className='font-Custom font-bold md:text-2xl lg:text-3xl text-[#1B1C1D] hover:text-PrimaryColor'><p className=' md:ml-0 lg:ml-7 mt-4 '>{Sports.topicSubHeading}</p></Link>
+                                  <Link className='font-Custom font-bold md:text-2xl lg:text-3xl text-[#1B1C1D] dark:text-white hover:text-PrimaryColor'><p className=' md:ml-0 lg:ml-7 mt-4 '>{Sports.topicSubHeading}</p></Link>
 
                                   <p className='font-Custom font-medium ml-7 md:ml-0 lg:ml-7 mt-2 w-[380px] hidden md:block lg:block text-PrimaryColor'>{Sports.topicHeadline}</p>
 
-                                  <div className='flex items-center space-x-1 md:ml-0 lg:ml-5 mt-3 font-Custom font-bold text-[#004081]'>
+                                  <div className='flex items-center space-x-1 md:ml-0 lg:ml-5 mt-3 font-Custom font-bold text-[#004081]  dark:text-white'>
                                      <div className='h-[8px] w-[8px] bg-[#791212]'></div><p className='text-[16px] font-Custom'>{Sports.poster}</p>  
                                   </div>
                             </div>
@@ -71,14 +71,14 @@ function GeneralThirdComponent() {
                               
                               <div className='p-3'>        
                                   <Link>
-                                        <p className='font-Custom font-bold md:text-[25px] lg:text-[20px] text-[#1B1C1D] hover:text-PrimaryColor'>{SportsS.headline}</p>
+                                        <p className='font-Custom font-bold md:text-[25px] lg:text-[20px] text-[#1B1C1D]  dark:text-white hover:text-PrimaryColor'>{SportsS.headline}</p>
                                   </Link>
 
                                   <p className='mt-2 w-5/3 md:text-[22px] lg:text-[16px] font-Custom'>
                                        {SportsS.miniHeadline}
                                   </p>
                                     
-                                  <div className='flex items-center mt-8 space-x-2 font-Custom font-medium text-[#004081]'>
+                                  <div className='flex items-center mt-8 space-x-2 font-Custom font-medium text-[#004081]  dark:text-white'>
                                       <div className='h-[10px] w-[10px] bg-[#791212]'></div><Link>{SportsS.poster}</Link>  
                                   </div>
                               
