@@ -36,7 +36,7 @@ function GeneralFirstComponent() {
     <div className='dark:text-white flex flex-col items-center'>
 
                      {/* Advert Box */}
-           <div className='h-[100px] w-[95%] md:hidden lg:w-9/12 dark:text-white flex items-center justify-center mt-10'> 
+           <div className='h-[100px] w-[95%] md:hidden lg:w-9/12  dark:text-white flex items-center justify-center mt-10'> 
                  <img src={advertBox.AD} />
            </div>
                           {/* Mobile and Medium Screens General Section */}
@@ -90,7 +90,7 @@ function GeneralFirstComponent() {
                                     <img src={newsItemsM.imageSrc} className='object-cover'/>
                                   </Link>
 
-                                  <Link className='text-[#1A1B1D] flex justify-start items-start font-bold'>
+                                  <Link className='text-[#1A1B1D] dark:text-white flex justify-start items-start font-bold'>
                                       <h1 className='font-Custom  hover:text-PrimaryColor text-[19px]'>{newsItemsM.title}</h1>
                                   </Link>
                               </Link>
@@ -130,7 +130,7 @@ function GeneralFirstComponent() {
                             <div key={index} className="flex items-center space-x-4">
                                 <img src={medium.imageSrc} className="w-20 h-20 rounded-lg object-cover" />
 
-                                <Link className="text-[20px] font-Custom font-medium text-gray-700  hover:text-PrimaryColor">{medium.headline}<p className='text-[16px] mt-1'>{medium.time}</p></Link>
+                                <Link className="text-[20px] font-Custom font-medium text-gray-700 dark:text-white  hover:text-PrimaryColor">{medium.headline}<p className='text-[16px] mt-1'>{medium.time}</p></Link>
                             </div>
                         ))}
                   </div>
@@ -206,9 +206,9 @@ function GeneralFirstComponent() {
                                   ].map((index) => (
                                     <div key={index.id} className="flex items-center space-x-4">
                                       <img src={index.imageSrc} className="w-20 h-20 rounded-lg  object-cover" />
-                                      <Link className="text-[20px] font-Custom font-medium text-gray-700  hover:text-PrimaryColor">{index.headline}
+                                      <Link className="text-[20px] font-Custom font-medium text-gray-700 dark:text-white hover:text-PrimaryColor">{index.headline}
                                       
-                                         <p className='text-[16px] mt-1 text-black'>{index.time}</p>
+                                         <p className='text-[16px] mt-1 text-black dark:text-white'>{index.time}</p>
                                       </Link>
                                     </div>
                                   ))}
