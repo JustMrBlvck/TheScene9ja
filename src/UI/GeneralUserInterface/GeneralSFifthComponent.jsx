@@ -42,10 +42,10 @@ function GeneralFifthComponent() {
                         <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Technology</h1>
 
                 <div className='min-h-[400px] gap-4 mt-3 grid border-t-[.2px] border-[#8080802f] md:grid md:grid-cols-[73%,27%]'>  
-                         <div className='space-y-4 bg-[#EAF6FC] mt-8'>
+                         <div className='space-y-4 bg-[] mt-8'>
                             {technologyArray.map((index)=>(
                                   <div key={index.id} className='flex items-center border-b-[3px] border-PrimaryColor space-x-5'>
-                                      <img src={index.imgSrc} className='h-[170px] w-[170px] bg-[green]'/>
+                                      <img src={index.imgSrc} className='h-[170px] w-[170px] bg-[green] object-cover'/>
 
                                       <Link className='font-Custom font-bold hover:text-PrimaryColor text-[20px]'>{index.headLine}</Link>
                                   </div>

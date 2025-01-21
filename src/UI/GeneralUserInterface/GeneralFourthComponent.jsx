@@ -21,9 +21,10 @@ function GeneralFourthComponent() {
 
             <div className='w-[95%] lg:w-[83%] mt-16'>
                   <h1 className='font-Custom text-PrimaryColor text-3xl font-bold'>Entertainment</h1>
+                  {/* #EAF6FC */}
 
                <div className='min-h-[650px] mt-2 border-t-[.2px] border-[#8080802f] gap-7 grid grid-cols-1 lg:grid lg:grid-cols-[75%,25%]'>
-                     <div className='bg-[#EAF6FC] lg:flex lg:justify-center mt-5 border-t-[3px] border-PrimaryColor'>
+                     <div className='bg-[] lg:flex lg:justify-center mt-5 border-t-[3px] border-PrimaryColor'>
                          <div>      
                                 <div className='flex items-center space-x-1 ml-3 lg:ml-5 mt-3'>
                                     <div className='h-[8px] w-[8px] bg-[#791212]'></div><Link className='text-[16px] font-Custom'>ENTERTAINMENT</Link>  
@@ -43,7 +44,7 @@ function GeneralFourthComponent() {
 
 
                      <div className='mt-5 border-t-[3px] border-PrimaryColor'>
-                         <div className='bg-[#EAF6FC]'>
+                         <div className='bg-[]'>
                              <Link>
                                     <img src={entertainmentLeftDiv.imgSrc} className='w-full'/>
                              </Link>

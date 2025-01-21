@@ -46,10 +46,10 @@ function GeneralThirdComponent() {
                 <h1 className='font-Custom text-PrimaryColor text-4xl font-bold'>Sports</h1>
 
                 <div className='min-h-[500px] w-[100%] md:w-[100%] mt-2 border-t-[.2px] border-[#8080802f] gap-7 grid grid-cols-1 lg:grid lg:grid-cols-[75%,25%]'>
-                      <div className='bg-[#EAF6FC] flex justify-center mt-5 border-t-[3px] border-PrimaryColor'>
+                      <div className='flex justify-center mt-5 border-t-[3px] border-PrimaryColor'>
                             <div className=''>      
                                   <div className='flex items-center space-x-1 md:ml-0 lg:ml-5 mt-3'>
-                                      <div className='h-[8px] w-[8px] bg-[#791212]'></div><Link className='text-[16px] font-Custom'>SPORTS</Link>  
+                                      <div className='h-[8px] w-[8px] bg-[#791212]'></div><Link className='text-[16px] font-Custom dark:text-black'>SPORTS</Link>  
                                   </div>
 
                                   <Link><img src={Sports.imgSrc} className='w-[98%] md:w-[98%]  md:ml-0 mt-5 h-[300px] lg:w-[80%] lg:ml-7'/></Link>
@@ -66,7 +66,7 @@ function GeneralThirdComponent() {
 
 
                      <div className='mt-5 border-t-[3px] border-PrimaryColor'>
-                         <div className='bg-[#EAF6FC]'>
+                         <div className='bg-[]'>
                               <Link>  <img src={SportsS.imgSrc} className='md:w-[100%]'/> </Link>
                               
                               <div className='p-3'>        
@@ -89,7 +89,7 @@ function GeneralThirdComponent() {
 
 
                   <div className='gap-4  mt-20 grid grid-cols-1 md:grid md:grid-cols-[73%,27%]'>  
-                         <div className='space-y-4  bg-[#EAF6FC]'>
+                         <div className='space-y-4  bg-[]'>
                             {sportsHeading.map((index)=>(
                                   <div key={index.id} className='space-y-10 items-center flex flex-col md:flex md:items-center md:flex-row lg:flex lg:items-center lg:flex-row border-b-[3px] border-PrimaryColor md:space-x-5'>
                                       <img src={index.imgSrc} className='md:h-[170px] md:w-[170px]'/>
