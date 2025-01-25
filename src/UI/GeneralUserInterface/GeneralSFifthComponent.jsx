@@ -45,7 +45,7 @@ function GeneralFifthComponent() {
                          <div className='space-y-4 bg-[] mt-8'>
                             {technologyArray.map((index)=>(
                                   <div key={index.id} className='flex items-center border-b-[3px] border-PrimaryColor space-x-5'>
-                                      <img src={index.imgSrc} className='h-[170px] w-[170px] bg-[green] object-cover'/>
+                                      <img src={index.imgSrc} className='h-[170px] w-[170px] object-cover'/>
 
                                       <Link className='font-Custom font-bold hover:text-PrimaryColor text-[20px]'>{index.headLine}</Link>
                                   </div>
